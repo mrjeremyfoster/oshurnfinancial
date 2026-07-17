@@ -1,12 +1,73 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #0b1220;
-    color: white;
-    text-align: center;
-    padding: 50px;
-}
+/* Mobile Responsive Design */
 
-a {
-    color: gold;
-    margin: 10px;
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-cta {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .pillars-grid,
+    .education-grid,
+    .insurance-grid,
+    .tools-grid,
+    .research-grid,
+    .membership-grid,
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .card,
+    .pillar-card,
+    .education-card,
+    .insurance-card,
+    .tool-card,
+    .research-card {
+        width: 100%;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
 }
