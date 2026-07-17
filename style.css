@@ -49,10 +49,11 @@ header{
 
 .nav{
     display:flex;
-    justify-content:space-between;
+    justify-contentflex-start;
     align-items:center;
     min-height:82px;
     padding:0;
+    gap: 60px;
 }
 
 .logo img{
