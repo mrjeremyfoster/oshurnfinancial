@@ -52,31 +52,18 @@ header{
     justify-content:flex-start;
     align-items:center;
     min-height:90px;
-    padding:0 0 14px 0;
-    gap:120px;      /* pushes the menu farther from the logo */
+    padding:0 0 16px 0;
+    gap:110px;
 }
 
 .logo{
-    margin-left:-12px;   /* moves the logo farther left */
+    margin-left:-20px;
 }
 
 .logo img{
-    height:175px;        /* was 125px */
+    height:155px;
     width:auto;
     display:block;
-}
-
-nav{
-    display:flex;
-    align-items:center;
-    gap:44px;
-}
-
-.logo:hover img{
-    transform:scale(1.03);
-    filter:
-        drop-shadow(0 0 10px rgba(200,164,93,.20))
-        drop-shadow(0 8px 18px rgba(0,0,0,.28));
 }
 
 nav{
@@ -86,32 +73,31 @@ nav{
 }
 
 nav a{
-    color:rgba(255,255,255,.94);
+    color:var(--white);
     text-decoration:none;
-    font-family:'Manrope',sans-serif;
+    font-family:"Poppins",sans-serif;
     font-weight:700;
-    font-size:17px;
+    font-size:18px;
     letter-spacing:.6px;
     line-height:1;
     position:relative;
-    transition:all .28s ease;
+    transition:all .3s ease;
 }
 
 nav a::after{
     content:"";
     position:absolute;
-    left:50%;
-    bottom:-12px;
-    transform:translateX(-50%);
+    left:0;
+    bottom:-11px;
     width:0;
     height:2px;
-    border-radius:99px;
-    background:var(--gold);
-    transition:width .28s ease;
+    border-radius:20px;
+    background:linear-gradient(90deg,#D4AF37,#F3D57A,#D4AF37);
+    transition:width .35s ease;
 }
 
 nav a:hover{
-    color:#fff;
+    color:#F3D57A;
 }
 
 nav a:hover::after{
