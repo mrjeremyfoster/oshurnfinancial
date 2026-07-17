@@ -49,11 +49,11 @@ header{
 
 .nav{
     display:flex;
-    justify-contentflex-start;
+    justify-content:flex-start;
     align-items:center;
-    min-height:82px;
-    padding:0;
-    gap: 60px;
+    min-height:74px;
+    padding:0 0 10px 0;
+    gap:72px;
 }
 
 .logo img{
@@ -65,20 +65,36 @@ header{
 nav{
     display:flex;
     align-items:center;
-    gap:28px;
+    gap:38px;
 }
 
 nav a{
     color:var(--white);
     text-decoration:none;
     font-weight:600;
-    font-size:15px;
-    letter-spacing:.3px;
+    font-size:17px;
+    letter-spacing:.4px;
+    position:relative;
     transition:all .3s ease;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0;
+    height:2px;
+    background:var(--gold);
+    transition:width .3s ease;
 }
 
 nav a:hover{
     color:var(--gold);
+}
+
+nav a:hover::after{
+    width:100%;
 }
 
 /* =========================
