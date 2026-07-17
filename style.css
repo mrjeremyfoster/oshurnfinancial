@@ -22,7 +22,7 @@ html{
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Manrope',sans-serif;
     background:var(--navy);
     color:var(--white);
     line-height:1.6;
@@ -51,48 +51,64 @@ header{
     display:flex;
     justify-content:flex-start;
     align-items:center;
-    min-height:82px;
-    padding:0 0 14px 0;
-    gap:90px;
+    min-height:84px;
+    padding:0 0 18px;
+    gap:96px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
 }
 
 .logo img{
     height:125px;
     width:auto;
     display:block;
+    transition:transform .35s ease, filter .35s ease;
+    filter:drop-shadow(0 6px 14px rgba(0,0,0,.22));
+}
+
+.logo:hover img{
+    transform:scale(1.03);
+    filter:
+        drop-shadow(0 0 10px rgba(200,164,93,.20))
+        drop-shadow(0 8px 18px rgba(0,0,0,.28));
 }
 
 nav{
     display:flex;
     align-items:center;
-    gap:42px;
+    gap:46px;
 }
 
 nav a{
-    color:var(--white);
+    color:rgba(255,255,255,.94);
     text-decoration:none;
+    font-family:'Manrope',sans-serif;
     font-weight:700;
     font-size:17px;
-    letter-spacing:.5px;
+    letter-spacing:.6px;
     line-height:1;
     position:relative;
-    transition:color .3s ease;
+    transition:all .28s ease;
 }
 
 nav a::after{
     content:"";
     position:absolute;
-    left:0;
-    bottom:-10px;
+    left:50%;
+    bottom:-12px;
+    transform:translateX(-50%);
     width:0;
     height:2px;
-    border-radius:2px;
+    border-radius:99px;
     background:var(--gold);
-    transition:width .3s ease;
+    transition:width .28s ease;
 }
 
 nav a:hover{
-    color:var(--gold);
+    color:#fff;
 }
 
 nav a:hover::after{
