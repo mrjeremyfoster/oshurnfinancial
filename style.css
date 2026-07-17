@@ -51,22 +51,25 @@ header{
     display:flex;
     justify-content:flex-start;
     align-items:center;
-    min-height:84px;
-    padding:0 0 18px;
-    gap:96px;
+    min-height:90px;
+    padding:0 0 14px 0;
+    gap:120px;      /* pushes the menu farther from the logo */
 }
 
 .logo{
-    display:flex;
-    align-items:center;
+    margin-left:-12px;   /* moves the logo farther left */
 }
 
 .logo img{
-    height:125px;
+    height:175px;        /* was 125px */
     width:auto;
     display:block;
-    transition:transform .35s ease, filter .35s ease;
-    filter:drop-shadow(0 6px 14px rgba(0,0,0,.22));
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:44px;
 }
 
 .logo:hover img{
