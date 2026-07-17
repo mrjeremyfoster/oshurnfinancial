@@ -56,15 +56,18 @@ header{
 }
 
 .logo img{
-    height:80px;
+    height:90px;
     width:auto;
     display:block;
 }
 
-nav{
+.nav{
     display:flex;
-    gap:28px;
-    margin-left:auto;
+    align-items:center;
+    justify-content:flex-start;
+    min-height:80px;
+    gap:40px;
+    padding:0;
 }
 
 nav a{
