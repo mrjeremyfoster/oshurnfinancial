@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1220;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+a {
+    color: gold;
+    margin: 10px;
+}
