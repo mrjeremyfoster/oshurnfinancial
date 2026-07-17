@@ -1,354 +1,390 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oshurn Financial | Financial Wisdom Rooted in Faith</title>
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-
-<header>
-    <div class="container nav">
-
-        <div class="logo">
-            <img src="logo.png" alt="Oshurn Financial">
-        </div>
-
-        <nav>
-            <a href="#education">Education</a>
-            <a href="#insurance">Insurance</a>
-            <a href="#tools">Tools</a>
-            <a href="#research">Research</a>
-            <a href="#membership">Membership</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-    </div>
-</header>
-
-<section class="hero">
-
-    <div class="container">
-
-        <div class="hero-badge">
-            Christian Financial Education & Insurance Solutions
-        </div>
-
-        <h1>
-            Helping Families Build Today.<br>
-            Protect Tomorrow.<br>
-            Leave a Legacy.
-        </h1>
-
-        <p>
-            Financial wisdom rooted in faith. Insurance solutions,
-            financial education, stewardship resources, and practical
-            tools designed to help families make confident financial decisions.
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#education" class="btn-primary">
-                Explore Resources
-            </a>
-
-            <a href="#insurance" class="btn-secondary">
-                Insurance Solutions
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="stats-bar">
-
-    <div class="container">
-
-        <div class="stats-grid">
-
-            <div class="stat-item">
-                <h3>Faith</h3>
-                <p>Biblical Stewardship</p>
-            </div>
-
-            <div class="stat-item">
-                <h3>Protection</h3>
-                <p>Life, Health & Medicare</p>
-            </div>
-
-            <div class="stat-item">
-                <h3>Education</h3>
-                <p>Financial Literacy Resources</p>
-            </div>
-
-            <div class="stat-item">
-                <h3>Legacy</h3>
-                <p>Long-Term Planning</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="pillars">
-
-    <div class="container">
-
-        <h2>Our Foundation</h2>
-
-        <div class="pillar-grid">
-
-            <div class="card">
-                <h3>Faith</h3>
-                <p>
-                    Biblical principles guiding financial decisions and
-                    responsible stewardship.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Stewardship</h3>
-                <p>
-                    Managing resources wisely with long-term vision and purpose.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Protection</h3>
-                <p>
-                    Helping families prepare for life's uncertainties.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Legacy</h3>
-                <p>
-                    Building something meaningful for future generations.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="insurance" class="section">
-
-    <div class="container">
-
-        <h2>Insurance Solutions</h2>
-
-        <div class="grid">
-
-            <div class="card">
-                <h3>Life Insurance</h3>
-                <p>
-                    Term Life, Whole Life, Universal Life,
-                    Final Expense, and family protection strategies.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Health Insurance</h3>
-                <p>
-                    Individual and family health coverage education and support.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Medicare</h3>
-                <p>
-                    Medicare education, enrollment assistance,
-                    and supplemental coverage guidance.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="tools" class="section dark">
-
-    <div class="container">
-
-        <h2>Financial Tools</h2>
-
-        <div class="grid">
-
-            <div class="card">
-                <h3>Budget Planner</h3>
-                <p>Create a monthly spending plan.</p>
-            </div>
-
-            <div class="card">
-                <h3>Emergency Fund Calculator</h3>
-                <p>Plan for life's unexpected expenses.</p>
-            </div>
-
-            <div class="card">
-                <h3>Debt Payoff Calculator</h3>
-                <p>Create a strategy to eliminate debt.</p>
-            </div>
-
-            <div class="card">
-                <h3>Retirement Calculator</h3>
-                <p>Estimate future retirement needs.</p>
-            </div>
-
-            <div class="card">
-                <h3>Financial Health Score</h3>
-                <p>Measure your overall financial wellness.</p>
-            </div>
-
-            <div class="card">
-                <h3>Goal Tracker</h3>
-                <p>Track savings and long-term goals.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="education" class="section">
-
-    <div class="container">
-
-        <h2>Financial Education Academy</h2>
-
-        <p class="center">
-            Learn budgeting, debt reduction, retirement planning,
-            insurance education, stewardship, investing basics,
-            and legacy planning.
-        </p>
-
-    </div>
-
-</section>
-
-<section id="research" class="section dark">
-
-    <div class="container">
-
-        <h2>Investment Research Center</h2>
-
-        <p class="center">
-            Educational content covering investing,
-            retirement planning, company analysis,
-            economic trends, market education,
-            and stewardship-focused financial literacy.
-        </p>
-
-    </div>
-
-</section>
-
-<section class="about-preview">
-
-    <div class="container">
-
-        <h2>Why Oshurn Exists</h2>
-
-        <p class="center">
-            We believe financial decisions should be guided by wisdom,
-            stewardship, and long-term thinking. Oshurn Financial exists
-            to help families learn, plan, protect, and build a lasting legacy.
-        </p>
-
-    </div>
-
-</section>
-
-<section id="membership" class="section">
-
-    <div class="container">
-
-        <h2>Membership Platform</h2>
-
-        <div class="grid">
-
-            <div class="card">
-                <h3>Free Membership</h3>
-                <p>
-                    Access educational resources,
-                    newsletters, and financial tools.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Premium Membership</h3>
-                <p>
-                    Coming Soon.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="newsletter">
-
-    <div class="container">
-
-        <h2>The Stewardship Letter</h2>
-
-        <p>
-            Monthly financial wisdom, stewardship principles,
-            protection strategies, and legacy planning insights.
-        </p>
-
-        <form>
-
-            <input
-                type="email"
-                placeholder="Enter your email address">
-
-            <button type="submit">
-                Subscribe
-            </button>
-
-        </form>
-
-    </div>
-
-</section>
-
-<footer id="contact">
-
-    <div class="container">
-
-        <h3>Oshurn Financial</h3>
-
-        <p>
-            Christian Financial Education & Insurance Solutions
-        </p>
-
-        <p>
-            Financial Wisdom Rooted in Faith
-        </p>
-
-        <br>
-
-        <p>
-            Life Insurance • Health Insurance • Medicare
-        </p>
-
-    </div>
-
-</footer>
-
-</body>
-</html>
+/* =========================
+   OSHURN FINANCIAL
+   ========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --navy:#0b1220;
+    --navy-light:#131d31;
+    --gold:#c8a45d;
+    --white:#ffffff;
+    --gray:#c7c7c7;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--navy);
+    color:var(--white);
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(11,18,32,.95);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo img{
+    height:65px;
+    width:auto;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:var(--gold);
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    background:
+    linear-gradient(
+        rgba(11,18,32,.75),
+        rgba(11,18,32,.90)
+    ),
+    url('herobanner.png');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.hero-badge{
+    display:inline-block;
+    padding:10px 18px;
+    border-radius:50px;
+    margin-bottom:25px;
+    color:var(--gold);
+    background:rgba(200,164,93,.12);
+    border:1px solid rgba(200,164,93,.25);
+}
+
+.hero h1{
+    font-size:5rem;
+    font-weight:800;
+    line-height:1.05;
+    margin-bottom:25px;
+    text-shadow:0 5px 20px rgba(0,0,0,.5);
+}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+    font-size:1.25rem;
+    color:#e5e5e5;
+}
+
+.hero-buttons{
+    margin-top:40px;
+}
+
+.btn-primary,
+.btn-secondary{
+    display:inline-block;
+    padding:15px 30px;
+    border-radius:8px;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--gold);
+    color:black;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    border:1px solid var(--gold);
+    color:var(--gold);
+}
+
+.btn-secondary:hover{
+    background:var(--gold);
+    color:black;
+}
+
+/* =========================
+   STATS BAR
+   ========================= */
+
+.stats-bar{
+    background:#10192c;
+    padding:40px 0;
+    border-top:1px solid rgba(255,255,255,.08);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.stat-item{
+    text-align:center;
+}
+
+.stat-item h3{
+    color:var(--gold);
+    margin-bottom:8px;
+}
+
+.stat-item p{
+    color:var(--gray);
+}
+
+/* =========================
+   SECTIONS
+   ========================= */
+
+.section{
+    padding:100px 0;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.5rem;
+}
+
+.dark{
+    background:var(--navy-light);
+}
+
+.center{
+    text-align:center;
+    max-width:850px;
+    margin:auto;
+    color:var(--gray);
+}
+
+/* =========================
+   GRIDS
+   ========================= */
+
+.grid,
+.pillar-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+/* =========================
+   CARDS
+   ========================= */
+
+.card{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:30px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:var(--gold);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.card h3{
+    color:var(--gold);
+    margin-bottom:12px;
+}
+
+.card p{
+    color:var(--gray);
+}
+
+/* =========================
+   PILLARS
+   ========================= */
+
+.pillars{
+    padding:100px 0;
+}
+
+.pillars h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+/* =========================
+   ABOUT PREVIEW
+   ========================= */
+
+.about-preview{
+    padding:100px 0;
+}
+
+.about-preview h2{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:2.5rem;
+}
+
+/* =========================
+   NEWSLETTER
+   ========================= */
+
+.newsletter{
+    padding:100px 0;
+    text-align:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #131d31,
+        #0b1220
+    );
+}
+
+.newsletter h2{
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.newsletter p{
+    color:var(--gray);
+    margin-bottom:30px;
+}
+
+.newsletter form{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.newsletter input{
+    width:340px;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+}
+
+.newsletter button{
+    background:var(--gold);
+    color:black;
+    border:none;
+    border-radius:8px;
+    padding:15px 25px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer{
+    text-align:center;
+    padding:60px 20px;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+footer h3{
+    color:var(--gold);
+    margin-bottom:12px;
+}
+
+footer p{
+    color:var(--gray);
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media(max-width:768px){
+
+    .nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section h2{
+        font-size:2rem;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+        max-width:320px;
+    }
+
+    .logo img{
+        height:50px;
+    }
+}
