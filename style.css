@@ -29,8 +29,8 @@ body{
 }
 
 .container{
-    width:90%;
-    max-width:1200px;
+    width:92%;
+    max-width:1320px;
     margin:auto;
 }
 
@@ -51,11 +51,11 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:8px 0;
+    padding:6px 0;
 }
 
 .logo img{
-    height:140px;
+    height:150px;
     width:auto;
 }
 
@@ -68,8 +68,8 @@ nav a{
     color:white;
     text-decoration:none;
     font-weight:600;
-    font-size:15px;
-    letter-spacing:.5px;
+    font-size:13px;
+    letter-spacing:.4px;
     transition:.3s;
 }
 
@@ -82,7 +82,8 @@ nav a:hover{
    ========================= */
 
 .hero{
-    min-height:90vh;
+
+    min-height:100vh;
 
     display:flex;
     align-items:center;
@@ -91,31 +92,32 @@ nav a:hover{
     background:
     linear-gradient(
         90deg,
-        rgba(11,18,32,.97) 0%,
-        rgba(11,18,32,.88) 35%,
-        rgba(11,18,32,.45) 100%
+        rgba(7,13,24,.98) 0%,
+        rgba(7,13,24,.92) 28%,
+        rgba(7,13,24,.75) 52%,
+        rgba(7,13,24,.35) 100%
     ),
-    url('herobanner.png');
+    url("herobanner.png");
 
     background-size:cover;
-    background-position:center;
+
+    /* Moves the people farther right so the text has clean space */
+    background-position:70% center;
+
     background-repeat:no-repeat;
 }
-
 .hero-content{
-    max-width:700px;
 
-    text-align:left;
+    width:100%;
+    max-width:620px;
 
     margin-left:0;
 
     padding-left:0;
 
     position:relative;
-
     z-index:2;
 }
-
 .hero-badge{
     display:inline-block;
 
@@ -155,7 +157,7 @@ nav a:hover{
     0 10px 30px rgba(0,0,0,.5);
 }
 .hero h1 .gold{
-    color:var(--gold);
+    color:#d8b46b;
 }
 
 .hero p{
