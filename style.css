@@ -51,9 +51,9 @@ header{
     display:flex;
     justify-content:flex-start;
     align-items:center;
-    min-height:74px;
-    padding:0 0 10px 0;
-    gap:72px;
+    min-height:82px;
+    padding:0 0 14px 0;
+    gap:90px;
 }
 
 .logo img{
@@ -65,26 +65,28 @@ header{
 nav{
     display:flex;
     align-items:center;
-    gap:38px;
+    gap:42px;
 }
 
 nav a{
     color:var(--white);
     text-decoration:none;
-    font-weight:600;
+    font-weight:700;
     font-size:17px;
-    letter-spacing:.4px;
+    letter-spacing:.5px;
+    line-height:1;
     position:relative;
-    transition:all .3s ease;
+    transition:color .3s ease;
 }
 
 nav a::after{
     content:"";
     position:absolute;
     left:0;
-    bottom:-8px;
+    bottom:-10px;
     width:0;
     height:2px;
+    border-radius:2px;
     background:var(--gold);
     transition:width .3s ease;
 }
