@@ -51,25 +51,28 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    gap: 50px;
     padding:12px 0;
 }
 
 .logo img{
-    height:70px;
+    height:80px;
     width:auto;
+    display:block;
 }
 
 nav{
     display:flex;
-    gap:35px;
+    gap:28px;
+    margin-left:auto;
 }
 
 nav a{
     color:white;
     text-decoration:none;
     font-weight:600;
-    font-size:13px;
-    letter-spacing:.4px;
+    font-size:15px;
+    letter-spacing:1.5px;
     transition:.3s;
 }
 
