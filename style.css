@@ -51,11 +51,11 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 0;
+    padding:8px 0;
 }
 
 .logo img{
-    height:230px;
+    height:140px;
     width:auto;
 }
 
@@ -82,33 +82,37 @@ nav a:hover{
    ========================= */
 
 .hero{
-    min-height:100vh;
+    min-height:90vh;
 
     display:flex;
     align-items:center;
+    justify-content:flex-start;
 
     background:
     linear-gradient(
         90deg,
-        rgba(11,18,32,.96) 0%,
-        rgba(11,18,32,.82) 40%,
-        rgba(11,18,32,.55) 100%
+        rgba(11,18,32,.97) 0%,
+        rgba(11,18,32,.88) 35%,
+        rgba(11,18,32,.45) 100%
     ),
     url('herobanner.png');
 
     background-size:cover;
-    background-position:center center;
+    background-position:center;
     background-repeat:no-repeat;
 }
 
 .hero-content{
-    max-width:600px;
+    max-width:700px;
+
     text-align:left;
 
     margin-left:0;
-    padding-left:40px;
+
+    padding-left:0;
 
     position:relative;
+
     z-index:2;
 }
 
@@ -137,30 +141,78 @@ nav a:hover{
 }
 
 .hero h1{
-    font-size:5.5rem;
+    font-size:4.2rem;
+
     font-weight:800;
-    line-height:.95;
+
+    line-height:1.05;
+
     margin-bottom:25px;
+
     color:#fff;
 
     text-shadow:
-    0 10px 30px rgba(0,0,0,.45);
+    0 10px 30px rgba(0,0,0,.5);
 }
-
 .hero h1 .gold{
     color:var(--gold);
 }
 
 .hero p{
-    max-width:550px;
-    margin-top:25px;
+    max-width:600px;
 
-    font-size:1.15rem;
-    color:#e5e5e5;
+    font-size:1.2rem;
+
+    color:#f0f0f0;
+
+    margin-top:20px;
+
+    margin-bottom:35px;
 }
 
 .hero-buttons{
-    display:none;
+    display:flex;
+    gap:15px;
+    margin-top:35px;
+}
+.btn-primary{
+    background:var(--gold);
+    color:#08101d;
+
+    text-decoration:none;
+
+    padding:16px 32px;
+
+    border-radius:10px;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    border:2px solid var(--gold);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px 32px;
+
+    border-radius:10px;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.btn-secondary:hover{
+    background:var(--gold);
+    color:#08101d;
 }
 
 /* =========================
