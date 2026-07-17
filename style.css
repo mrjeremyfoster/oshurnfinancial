@@ -51,32 +51,29 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap: 50px;
-    padding:12px 0;
+    min-height:82px;
+    padding:0;
 }
 
 .logo img{
-    height:90px;
+    height:96px;
     width:auto;
     display:block;
 }
 
-.nav{
+nav{
     display:flex;
     align-items:center;
-    justify-content:flex-start;
-    min-height:80px;
-    gap:40px;
-    padding:0;
+    gap:34px;
 }
 
 nav a{
-    color:white;
+    color:var(--white);
     text-decoration:none;
     font-weight:600;
     font-size:15px;
-    letter-spacing:1.5px;
-    transition:.3s;
+    letter-spacing:.6px;
+    transition:all .3s ease;
 }
 
 nav a:hover{
