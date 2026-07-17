@@ -1,312 +1,354 @@
-/* =========================
-   OSHURN FINANCIAL
-   ========================= */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oshurn Financial | Financial Wisdom Rooted in Faith</title>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<link rel="stylesheet" href="style.css">
 
-:root{
-    --navy:#0b1220;
-    --navy-light:#131d31;
-    --gold:#c8a45d;
-    --white:#ffffff;
-    --gray:#c7c7c7;
-}
+</head>
+<body>
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--navy);
-    color: var(--white);
-    line-height: 1.6;
-}
+<header>
+    <div class="container nav">
 
-html{
-    scroll-behavior:smooth;
-}
+        <div class="logo">
+            <img src="logo.png" alt="Oshurn Financial">
+        </div>
 
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
+        <nav>
+            <a href="#education">Education</a>
+            <a href="#insurance">Insurance</a>
+            <a href="#tools">Tools</a>
+            <a href="#research">Research</a>
+            <a href="#membership">Membership</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-/* =========================
-   HEADER
-   ========================= */
+    </div>
+</header>
 
-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:rgba(11,18,32,.95);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid rgba(255,255,255,.08);
-}
+<section class="hero">
 
-.nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 0;
-}
+    <div class="container">
 
-.logo{
-    font-size:1.5rem;
-    font-weight:700;
-    letter-spacing:2px;
-}
+        <div class="hero-badge">
+            Christian Financial Education & Insurance Solutions
+        </div>
 
-.logo span{
-    color:var(--gold);
-}
+        <h1>
+            Helping Families Build Today.<br>
+            Protect Tomorrow.<br>
+            Leave a Legacy.
+        </h1>
 
-nav{
-    display:flex;
-    gap:25px;
-}
+        <p>
+            Financial wisdom rooted in faith. Insurance solutions,
+            financial education, stewardship resources, and practical
+            tools designed to help families make confident financial decisions.
+        </p>
 
-nav a{
-    color:white;
-    text-decoration:none;
-    transition:.3s;
-}
+        <div class="hero-buttons">
 
-nav a:hover{
-    color:var(--gold);
-}
+            <a href="#education" class="btn-primary">
+                Explore Resources
+            </a>
 
-/* =========================
-   HERO
-   ========================= */
+            <a href="#insurance" class="btn-secondary">
+                Insurance Solutions
+            </a>
 
-.hero{
-    min-height:85vh;
-    display:flex;
-    align-items:center;
-    text-align:center;
-    background:
-    linear-gradient(rgba(11,18,32,.85),
-    rgba(11,18,32,.95));
-}
+        </div>
 
-.hero h1{
-    font-size:4rem;
-    margin-bottom:20px;
-    line-height:1.1;
-}
+    </div>
 
-.hero p{
-    max-width:700px;
-    margin:auto;
-    color:var(--gray);
-    font-size:1.2rem;
-}
+</section>
 
-.hero-buttons{
-    margin-top:35px;
-}
+<section class="stats-bar">
 
-.btn-primary,
-.btn-secondary{
-    display:inline-block;
-    padding:15px 28px;
-    border-radius:8px;
-    text-decoration:none;
-    margin:10px;
-    font-weight:bold;
-}
+    <div class="container">
 
-.btn-primary{
-    background:var(--gold);
-    color:black;
-}
+        <div class="stats-grid">
 
-.btn-primary:hover{
-    transform:translateY(-2px);
-}
+            <div class="stat-item">
+                <h3>Faith</h3>
+                <p>Biblical Stewardship</p>
+            </div>
 
-.btn-secondary{
-    border:1px solid var(--gold);
-    color:var(--gold);
-}
+            <div class="stat-item">
+                <h3>Protection</h3>
+                <p>Life, Health & Medicare</p>
+            </div>
 
-.btn-secondary:hover{
-    background:var(--gold);
-    color:black;
-}
+            <div class="stat-item">
+                <h3>Education</h3>
+                <p>Financial Literacy Resources</p>
+            </div>
 
-/* =========================
-   SECTIONS
-   ========================= */
+            <div class="stat-item">
+                <h3>Legacy</h3>
+                <p>Long-Term Planning</p>
+            </div>
 
-.section{
-    padding:90px 0;
-}
+        </div>
 
-.section h2{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:2.5rem;
-}
+    </div>
 
-.dark{
-    background:var(--navy-light);
-}
+</section>
 
-.center{
-    text-align:center;
-    max-width:800px;
-    margin:auto;
-    color:var(--gray);
-}
+<section class="pillars">
 
-/* =========================
-   CARDS
-   ========================= */
+    <div class="container">
 
-.grid,
-.pillar-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
+        <h2>Our Foundation</h2>
 
-.card{
-    background:rgba(255,255,255,.04);
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:15px;
-    padding:30px;
-    transition:.3s;
-}
+        <div class="pillar-grid">
 
-.card:hover{
-    transform:translateY(-6px);
-    border-color:var(--gold);
-}
+            <div class="card">
+                <h3>Faith</h3>
+                <p>
+                    Biblical principles guiding financial decisions and
+                    responsible stewardship.
+                </p>
+            </div>
 
-.card h3{
-    margin-bottom:12px;
-    color:var(--gold);
-}
+            <div class="card">
+                <h3>Stewardship</h3>
+                <p>
+                    Managing resources wisely with long-term vision and purpose.
+                </p>
+            </div>
 
-.card p{
-    color:var(--gray);
-}
+            <div class="card">
+                <h3>Protection</h3>
+                <p>
+                    Helping families prepare for life's uncertainties.
+                </p>
+            </div>
 
-/* =========================
-   PILLARS
-   ========================= */
+            <div class="card">
+                <h3>Legacy</h3>
+                <p>
+                    Building something meaningful for future generations.
+                </p>
+            </div>
 
-.pillars{
-    padding:90px 0;
-}
+        </div>
 
-.pillars h2{
-    text-align:center;
-    margin-bottom:40px;
-}
+    </div>
 
-/* =========================
-   NEWSLETTER
-   ========================= */
+</section>
 
-.newsletter{
-    padding:100px 0;
-    text-align:center;
-    background:linear-gradient(
-        135deg,
-        #131d31,
-        #0b1220
-    );
-}
+<section id="insurance" class="section">
 
-.newsletter h2{
-    margin-bottom:15px;
-    font-size:2.3rem;
-}
+    <div class="container">
 
-.newsletter p{
-    color:var(--gray);
-    margin-bottom:30px;
-}
+        <h2>Insurance Solutions</h2>
 
-.newsletter form{
-    display:flex;
-    justify-content:center;
-    gap:10px;
-    flex-wrap:wrap;
-}
+        <div class="grid">
 
-.newsletter input{
-    padding:15px;
-    width:320px;
-    border:none;
-    border-radius:8px;
-}
+            <div class="card">
+                <h3>Life Insurance</h3>
+                <p>
+                    Term Life, Whole Life, Universal Life,
+                    Final Expense, and family protection strategies.
+                </p>
+            </div>
 
-.newsletter button{
-    background:var(--gold);
-    color:black;
-    border:none;
-    padding:15px 25px;
-    border-radius:8px;
-    cursor:pointer;
-    font-weight:bold;
-}
+            <div class="card">
+                <h3>Health Insurance</h3>
+                <p>
+                    Individual and family health coverage education and support.
+                </p>
+            </div>
 
-/* =========================
-   FOOTER
-   ========================= */
+            <div class="card">
+                <h3>Medicare</h3>
+                <p>
+                    Medicare education, enrollment assistance,
+                    and supplemental coverage guidance.
+                </p>
+            </div>
 
-footer{
-    text-align:center;
-    padding:50px 20px;
-    border-top:1px solid rgba(255,255,255,.08);
-}
+        </div>
 
-footer h3{
-    color:var(--gold);
-    margin-bottom:10px;
-}
+    </div>
 
-footer p{
-    color:var(--gray);
-}
+</section>
 
-/* =========================
-   MOBILE
-   ========================= */
+<section id="tools" class="section dark">
 
-@media(max-width:768px){
+    <div class="container">
 
-    .nav{
-        flex-direction:column;
-        gap:15px;
-    }
+        <h2>Financial Tools</h2>
 
-    nav{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
+        <div class="grid">
 
-    .hero h1{
-        font-size:2.5rem;
-    }
+            <div class="card">
+                <h3>Budget Planner</h3>
+                <p>Create a monthly spending plan.</p>
+            </div>
 
-    .hero p{
-        font-size:1rem;
-    }
+            <div class="card">
+                <h3>Emergency Fund Calculator</h3>
+                <p>Plan for life's unexpected expenses.</p>
+            </div>
 
-    .section h2{
-        font-size:2rem;
-    }
+            <div class="card">
+                <h3>Debt Payoff Calculator</h3>
+                <p>Create a strategy to eliminate debt.</p>
+            </div>
 
-    .btn-primary,
-    .btn-secondary{
-        width:100%;
-        max-width:300px;
-    }
-}
+            <div class="card">
+                <h3>Retirement Calculator</h3>
+                <p>Estimate future retirement needs.</p>
+            </div>
+
+            <div class="card">
+                <h3>Financial Health Score</h3>
+                <p>Measure your overall financial wellness.</p>
+            </div>
+
+            <div class="card">
+                <h3>Goal Tracker</h3>
+                <p>Track savings and long-term goals.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="education" class="section">
+
+    <div class="container">
+
+        <h2>Financial Education Academy</h2>
+
+        <p class="center">
+            Learn budgeting, debt reduction, retirement planning,
+            insurance education, stewardship, investing basics,
+            and legacy planning.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="research" class="section dark">
+
+    <div class="container">
+
+        <h2>Investment Research Center</h2>
+
+        <p class="center">
+            Educational content covering investing,
+            retirement planning, company analysis,
+            economic trends, market education,
+            and stewardship-focused financial literacy.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="about-preview">
+
+    <div class="container">
+
+        <h2>Why Oshurn Exists</h2>
+
+        <p class="center">
+            We believe financial decisions should be guided by wisdom,
+            stewardship, and long-term thinking. Oshurn Financial exists
+            to help families learn, plan, protect, and build a lasting legacy.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="membership" class="section">
+
+    <div class="container">
+
+        <h2>Membership Platform</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Free Membership</h3>
+                <p>
+                    Access educational resources,
+                    newsletters, and financial tools.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Premium Membership</h3>
+                <p>
+                    Coming Soon.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <h2>The Stewardship Letter</h2>
+
+        <p>
+            Monthly financial wisdom, stewardship principles,
+            protection strategies, and legacy planning insights.
+        </p>
+
+        <form>
+
+            <input
+                type="email"
+                placeholder="Enter your email address">
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer id="contact">
+
+    <div class="container">
+
+        <h3>Oshurn Financial</h3>
+
+        <p>
+            Christian Financial Education & Insurance Solutions
+        </p>
+
+        <p>
+            Financial Wisdom Rooted in Faith
+        </p>
+
+        <br>
+
+        <p>
+            Life Insurance • Health Insurance • Medicare
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
