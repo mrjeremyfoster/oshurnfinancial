@@ -1,6 +1,6 @@
-/* =========================
-   OSHURN FINANCIAL
-   ========================= */
+/* ===================================
+   OSHURN FINANCIAL V2
+=================================== */
 
 *{
     margin:0;
@@ -9,134 +9,191 @@
 }
 
 :root{
-    --navy:#0b1220;
-    --navy-light:#131d31;
-    --gold:#c8a45d;
-    --gold-light:#d9b673;
-    --white:#ffffff;
-    --gray:#c7c7c7;
+
+    --navy:#09121F;
+    --navy-light:#132238;
+    --gold:#C8A45D;
+    --gold-light:#E0BE77;
+    --white:#FFFFFF;
+    --gray:#BFC7D1;
+
 }
 
 html{
+
     scroll-behavior:smooth;
+
 }
 
 body{
-    font-family:'Manrope',sans-serif;
+
+    font-family:"Manrope",sans-serif;
+
     background:var(--navy);
-    color:var(--white);
-    line-height:1.6;
+
+    color:white;
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
 }
 
 .container{
+
     width:92%;
+
     max-width:1320px;
+
     margin:auto;
+
 }
 
-/* =========================
+/* ===================================
    HEADER
-   ========================= */
+=================================== */
 
 header{
-    position:sticky;
+
+    position:fixed;
+
     top:0;
-    z-index:1000;
-    background:rgba(11,18,32,.95);
-    backdrop-filter:blur(12px);
-    border-bottom:1px solid rgba(255,255,255,.08);
+
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    background:rgba(8,14,24,.92);
+
+    backdrop-filter:blur(14px);
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
 }
 
 .nav{
-    display:flex;
-    justify-content:flex-start;
-    align-items:center;
-    gap:110px;
-    min-height:78px;
-    padding-bottom:16px;
-}
 
-.logo{
-    margin-left:-20px;
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    min-height:95px;
+
 }
 
 .logo img{
-    height:155px;
-    width:auto;
-    display:block;
+
+    width:190px;
+
 }
 
 nav{
+
     display:flex;
-    align-items:center;
-    gap:46px;
+
+    gap:45px;
+
 }
 
 nav a{
-    color:var(--white);
-    text-decoration:none;
-    font-weight:700;
-    font-size:18px;
-    letter-spacing:.5px;
-    position:relative;
-    transition:.3s;
-}
 
-nav a::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-10px;
-    width:0;
-    height:2px;
-    border-radius:20px;
-    background:linear-gradient(90deg,#D4AF37,#F3D57A,#D4AF37);
-    transition:.35s;
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+    transition:.3s;
+
+    position:relative;
+
 }
 
 nav a:hover{
-    color:#F3D57A;
+
+    color:var(--gold);
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-8px;
+
+    left:0;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--gold);
+
+    transition:.35s;
+
 }
 
 nav a:hover::after{
+
     width:100%;
+
 }
 
-/* =========================
+/* ===================================
    HERO
-   ========================= */
+=================================== */
 
 .hero{
 
     min-height:100vh;
 
     display:flex;
+
     align-items:center;
 
     background:
+
     linear-gradient(
+
         90deg,
-        rgba(7,13,24,.98) 0%,
-        rgba(7,13,24,.92) 28%,
-        rgba(7,13,24,.75) 52%,
-        rgba(7,13,24,.35) 100%
+
+        rgba(7,12,22,.96),
+
+        rgba(7,12,22,.75),
+
+        rgba(7,12,22,.25)
+
     ),
+
     url("herobanner.png");
 
     background-size:cover;
-    background-position:82% center;
-    background-repeat:no-repeat;
+
+    background-position:center right;
+
+    padding-top:120px;
 
 }
 
 .hero-content{
 
-    max-width:560px;
-
-    margin-left:40px;
-
-    position:relative;
-    z-index:2;
+    max-width:620px;
 
 }
 
@@ -144,25 +201,23 @@ nav a:hover::after{
 
     display:inline-block;
 
-    padding:12px 22px;
+    padding:10px 22px;
 
-    border-radius:50px;
-
-    margin-bottom:25px;
-
-    color:var(--gold);
+    border-radius:100px;
 
     background:rgba(200,164,93,.15);
 
-    border:1px solid rgba(200,164,93,.35);
+    color:var(--gold);
+
+    border:1px solid rgba(200,164,93,.4);
 
     font-size:.85rem;
 
-    font-weight:700;
-
-    letter-spacing:2px;
+    letter-spacing:1.5px;
 
     text-transform:uppercase;
+
+    margin-bottom:25px;
 
 }
 
@@ -170,83 +225,91 @@ nav a:hover::after{
 
     font-size:4.6rem;
 
+    line-height:1.08;
+
     font-weight:800;
 
-    line-height:1.1;
-
     margin-bottom:25px;
-
-    color:#fff;
-
-    text-shadow:0 10px 30px rgba(0,0,0,.5);
 
 }
 
 .hero h1 .gold{
 
-    color:#d8b46b;
+    color:var(--gold);
 
 }
 
 .hero p{
 
-    max-width:600px;
+    color:#E8E8E8;
 
-    font-size:1.2rem;
+    font-size:1.15rem;
 
-    color:#f0f0f0;
+    max-width:580px;
 
-    margin:20px 0 35px;
+    margin-bottom:40px;
 
 }
+
+/* ===================================
+   BUTTONS
+=================================== */
 
 .hero-buttons{
 
     display:flex;
 
-    gap:15px;
+    gap:18px;
+
+    flex-wrap:wrap;
 
 }
 
 .btn-primary{
 
+    display:inline-block;
+
     background:var(--gold);
 
-    color:#08101d;
+    color:#09121F;
 
-    text-decoration:none;
-
-    padding:16px 32px;
+    padding:16px 34px;
 
     border-radius:10px;
 
+    text-decoration:none;
+
     font-weight:700;
 
-    transition:.3s;
+    transition:.35s;
 
 }
 
 .btn-primary:hover{
 
-    transform:translateY(-3px);
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(200,164,93,.30);
 
 }
 
 .btn-secondary{
 
+    display:inline-block;
+
     border:2px solid var(--gold);
 
-    color:#fff;
+    color:white;
 
-    text-decoration:none;
-
-    padding:16px 32px;
+    padding:16px 34px;
 
     border-radius:10px;
 
+    text-decoration:none;
+
     font-weight:700;
 
-    transition:.3s;
+    transition:.35s;
 
 }
 
@@ -254,140 +317,146 @@ nav a:hover::after{
 
     background:var(--gold);
 
-    color:#08101d;
+    color:#09121F;
 
 }
-/* =========================
-   TRUST BAR
-   ========================= */
-
-.stats-bar{
-    background:#10192c;
-    padding:70px 0;
-    border-top:1px solid rgba(255,255,255,.08);
-    border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.stats-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:35px;
-}
-
-.stat-item{
-    text-align:center;
-    padding:25px;
-    transition:.35s ease;
-}
-
-.stat-item:hover{
-    transform:translateY(-8px);
-}
-
-.stat-icon{
-    width:72px;
-    height:72px;
-    object-fit:contain;
-    display:block;
-    margin:0 auto 22px;
-}
-
-.stat-item h3{
-    color:var(--gold);
-    font-size:1.35rem;
-    margin-bottom:12px;
-}
-
-.stat-item p{
-    color:var(--gray);
-}
-
-/* =========================
-   SECTIONS
-   ========================= */
+/* ===================================
+   SECTION DEFAULTS
+=================================== */
 
 .section{
-    padding:140px 0;
-}
 
-.section h2{
-    text-align:center;
-    font-size:2.8rem;
-    margin-bottom:40px;
+    padding:100px 0;
+
 }
 
 .dark{
+
     background:var(--navy-light);
+
+}
+
+.section h2{
+
+    text-align:center;
+
+    font-size:2.8rem;
+
+    margin-bottom:20px;
+
+    font-weight:800;
+
 }
 
 .center{
-    max-width:850px;
-    margin:auto;
+
+    max-width:760px;
+
+    margin:0 auto 60px;
+
     text-align:center;
+
     color:var(--gray);
+
     font-size:1.05rem;
+
 }
 
-/* =========================
-   STANDARD GRID
-   ========================= */
+/* ===================================
+   FAITH • PROTECTION • EDUCATION • LEGACY
+=================================== */
 
-.grid{
+.stats-bar{
+
+    background:#101B2D;
+
+    padding:90px 0;
+
+}
+
+.stats-grid{
+
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:35px;
+
 }
 
-/* =========================
-   STANDARD CARDS
-   ========================= */
+.stat-item{
 
-.card{
-    background:rgba(255,255,255,.04);
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:22px;
-    padding:40px;
+    background:#162338;
+
+    border-radius:18px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
     transition:.35s;
-    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.05);
+
 }
 
-.card:hover{
+.stat-item:hover{
+
     transform:translateY(-10px);
-    border-color:var(--gold);
+
+    border-color:rgba(200,164,93,.45);
+
     box-shadow:0 20px 45px rgba(0,0,0,.30);
+
 }
 
-.card h3{
+.stat-icon{
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:contain;
+
+    margin:0 auto 25px;
+
+}
+
+.stat-item h3{
+
+    font-size:1.45rem;
+
     color:var(--gold);
+
     margin-bottom:15px;
+
 }
 
-.card p{
+.stat-item p{
+
     color:var(--gray);
+
 }
 
-/* =========================
+/* ===================================
    INSURANCE SECTION
-   ========================= */
+=================================== */
 
 .pillars{
-    padding:140px 0;
-}
 
-.pillars h2{
-    text-align:center;
-    margin-bottom:55px;
-    font-size:2.8rem;
+    padding:110px 0;
+
 }
 
 .insurance-grid{
 
     display:grid;
 
-    grid-template-columns:
-    repeat(auto-fit,minmax(340px,1fr));
+    grid-template-columns:repeat(3,1fr);
 
     gap:35px;
+
+    margin-top:55px;
 
 }
 
@@ -395,20 +464,17 @@ nav a:hover::after{
 
     position:relative;
 
-    height:440px;
-
-    border-radius:24px;
-
     overflow:hidden;
+
+    border-radius:22px;
+
+    height:520px;
 
     background:#111;
 
-    cursor:pointer;
-
     transition:.4s;
 
-    box-shadow:
-    0 20px 45px rgba(0,0,0,.35);
+    box-shadow:0 18px 45px rgba(0,0,0,.35);
 
 }
 
@@ -418,7 +484,11 @@ nav a:hover::after{
 
 }
 
-.insurance-card>img:first-child{
+.insurance-card img:first-child{
+
+    position:absolute;
+
+    inset:0;
 
     width:100%;
 
@@ -426,13 +496,11 @@ nav a:hover::after{
 
     object-fit:cover;
 
-    display:block;
-
-    transition:.7s ease;
+    transition:transform .6s ease;
 
 }
 
-.insurance-card:hover>img:first-child{
+.insurance-card:hover img:first-child{
 
     transform:scale(1.08);
 
@@ -452,21 +520,20 @@ nav a:hover::after{
 
     padding:35px;
 
-    background:
-    linear-gradient(
+    background:linear-gradient(
         to top,
-        rgba(5,10,20,.96) 0%,
-        rgba(5,10,20,.65) 55%,
-        rgba(5,10,20,.15) 100%
+        rgba(5,10,18,.95),
+        rgba(5,10,18,.65),
+        rgba(5,10,18,.15)
     );
 
 }
 
 .insurance-icon{
 
-    width:72px;
+    width:70px;
 
-    height:72px;
+    height:70px;
 
     object-fit:contain;
 
@@ -476,39 +543,43 @@ nav a:hover::after{
 
 .insurance-overlay h3{
 
-    color:var(--gold);
-
     font-size:2rem;
 
-    margin-bottom:16px;
+    margin-bottom:15px;
+
+    color:white;
 
 }
 
 .insurance-overlay p{
 
-    color:#fff;
-
-    line-height:1.8;
+    color:#E6E6E6;
 
     margin-bottom:28px;
+
+    line-height:1.7;
 
 }
 
 .insurance-btn{
 
-    display:inline-block;
+    display:inline-flex;
 
-    align-self:flex-start;
+    align-items:center;
 
-    background:var(--gold);
+    justify-content:center;
 
-    color:#08101d;
-
-    text-decoration:none;
+    width:max-content;
 
     padding:14px 28px;
 
-    border-radius:8px;
+    border-radius:10px;
+
+    background:var(--gold);
+
+    color:var(--navy);
+
+    text-decoration:none;
 
     font-weight:700;
 
@@ -518,46 +589,78 @@ nav a:hover::after{
 
 .insurance-btn:hover{
 
-    background:#F3D57A;
+    background:var(--gold-light);
 
-    transform:translateY(-2px);
+    transform:translateY(-3px);
 
 }
-/* =========================
-   ABOUT
-   ========================= */
+/* ===================================
+   REUSABLE GRID & CARDS
+=================================== */
 
-.about-preview{
-    padding:140px 0;
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:35px;
+
 }
 
-.about-preview h2{
-    text-align:center;
-    font-size:2.8rem;
-    margin-bottom:30px;
+.card{
+
+    background:#162338;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    transition:.35s;
+
 }
 
-.about-preview p{
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(200,164,93,.45);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.30);
+
+}
+
+.card h3{
+
+    color:var(--gold);
+
+    margin-bottom:18px;
+
+    font-size:1.45rem;
+
+}
+
+.card p{
+
     color:var(--gray);
-    line-height:1.9;
+
+    line-height:1.8;
+
 }
 
-/* =========================
+/* ===================================
    NEWSLETTER
-   ========================= */
+=================================== */
 
 .newsletter{
 
-    padding:140px 0;
+    padding:110px 0;
+
+    background:linear-gradient(135deg,#0E1828,#162338);
 
     text-align:center;
-
-    background:
-    linear-gradient(
-        135deg,
-        #131d31,
-        #0b1220
-    );
 
 }
 
@@ -565,15 +668,17 @@ nav a:hover::after{
 
     font-size:2.8rem;
 
-    margin-bottom:15px;
+    margin-bottom:20px;
 
 }
 
 .newsletter p{
 
-    color:var(--gray);
+    max-width:700px;
 
-    margin-bottom:35px;
+    margin:0 auto 40px;
+
+    color:var(--gray);
 
 }
 
@@ -591,17 +696,19 @@ nav a:hover::after{
 
 .newsletter input{
 
-    width:360px;
+    width:420px;
 
-    padding:18px;
+    max-width:100%;
+
+    padding:18px 22px;
 
     border:none;
 
     border-radius:10px;
 
-    outline:none;
-
     font-size:1rem;
+
+    outline:none;
 
 }
 
@@ -609,17 +716,17 @@ nav a:hover::after{
 
     background:var(--gold);
 
-    color:#08101d;
+    color:var(--navy);
 
     border:none;
 
-    border-radius:10px;
-
     padding:18px 34px;
 
-    font-weight:700;
+    border-radius:10px;
 
     cursor:pointer;
+
+    font-weight:700;
 
     transition:.3s;
 
@@ -627,25 +734,25 @@ nav a:hover::after{
 
 .newsletter button:hover{
 
-    background:#F3D57A;
+    background:var(--gold-light);
 
     transform:translateY(-3px);
 
 }
 
-/* =========================
+/* ===================================
    FOOTER
-   ========================= */
+=================================== */
 
 footer{
 
+    background:#050A12;
+
+    padding:70px 0;
+
     text-align:center;
 
-    padding:90px 20px;
-
-    border-top:1px solid rgba(255,255,255,.08);
-
-    background:#08101d;
+    border-top:1px solid rgba(255,255,255,.06);
 
 }
 
@@ -653,33 +760,89 @@ footer h3{
 
     color:var(--gold);
 
-    margin-bottom:20px;
+    margin-bottom:15px;
 
-    font-size:2rem;
+    font-size:1.8rem;
 
 }
 
 footer p{
 
-    color:var(--gray);
+    color:#BFC7D1;
 
     line-height:1.8;
 
 }
 
-/* =========================
-   MOBILE
-   ========================= */
+footer img{
 
-@media (max-width:768px){
+    margin:0 auto 25px;
+
+}
+
+/* ===================================
+   SCROLLBAR
+=================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#08111D;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--gold);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--gold-light);
+
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media(max-width:1100px){
+
+    .hero h1{
+
+        font-size:3.6rem;
+
+    }
+
+    .stats-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .insurance-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
 
     .nav{
 
         flex-direction:column;
 
-        gap:20px;
-
-        text-align:center;
+        padding:20px 0;
 
     }
 
@@ -691,19 +854,13 @@ footer p{
 
         gap:18px;
 
-    }
-
-    .logo img{
-
-        height:120px;
+        margin-top:20px;
 
     }
 
     .hero{
 
-        min-height:90vh;
-
-        padding:80px 0;
+        text-align:center;
 
         background-position:center;
 
@@ -711,35 +868,19 @@ footer p{
 
     .hero-content{
 
-        margin:0 auto;
-
-        padding:0 20px;
-
-        text-align:center;
-
-        max-width:100%;
+        margin:auto;
 
     }
 
     .hero h1{
 
-        font-size:3rem;
-
-    }
-
-    .hero p{
-
-        font-size:1rem;
-
-        margin:auto;
+        font-size:2.9rem;
 
     }
 
     .hero-buttons{
 
-        flex-direction:column;
-
-        align-items:center;
+        justify-content:center;
 
     }
 
@@ -749,56 +890,53 @@ footer p{
 
     }
 
-    .insurance-grid{
+    .section{
 
-        grid-template-columns:1fr;
-
-    }
-
-    .insurance-card{
-
-        height:360px;
+        padding:80px 0;
 
     }
 
-    .insurance-overlay{
+    .section h2{
 
-        padding:25px;
-
-    }
-
-    .insurance-icon{
-
-        width:60px;
-
-        height:60px;
+        font-size:2.2rem;
 
     }
 
-    .insurance-overlay h3{
-
-        font-size:1.6rem;
-
-    }
-
-    .section,
-    .pillars,
-    .about-preview,
-    .newsletter{
-
-        padding:90px 0;
-
-    }
-
-    .section h2,
-    .pillars h2,
-    .about-preview h2,
     .newsletter h2{
 
-        font-size:2rem;
+        font-size:2.2rem;
 
     }
 
 }
 
+@media(max-width:500px){
 
+    .hero h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .newsletter input{
+
+        width:100%;
+
+    }
+
+    .newsletter button{
+
+        width:100%;
+
+    }
+
+}
