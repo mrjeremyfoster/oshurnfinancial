@@ -1,6 +1,6 @@
-/* ===================================
-   OSHURN FINANCIAL V2
-=================================== */
+/* ======================================================
+OSHURN FINANCIAL V3
+====================================================== */
 
 *{
     margin:0;
@@ -10,12 +10,13 @@
 
 :root{
 
-    --navy:#09121F;
-    --navy-light:#132238;
-    --gold:#C8A45D;
-    --gold-light:#E0BE77;
+    --navy:#071320;
+    --navy2:#0F2036;
+    --gold:#C9A45A;
+    --gold-light:#E3C98A;
     --white:#FFFFFF;
-    --gray:#BFC7D1;
+    --gray:#C8D1DB;
+    --text:#F4F4F4;
 
 }
 
@@ -27,93 +28,89 @@ html{
 
 body{
 
-    font-family:"Manrope",sans-serif;
-
+    font-family:'Manrope',sans-serif;
     background:var(--navy);
-
-    color:white;
-
+    color:var(--white);
     line-height:1.7;
-
     overflow-x:hidden;
 
 }
 
 img{
 
-    max-width:100%;
-
     display:block;
+    max-width:100%;
 
 }
 
 .container{
 
     width:92%;
-
-    max-width:1320px;
-
+    max-width:1300px;
     margin:auto;
 
 }
 
-/* ===================================
-   HEADER
-=================================== */
+/* ======================================================
+HEADER
+====================================================== */
 
 header{
 
     position:fixed;
-
     top:0;
-
     left:0;
-
     width:100%;
-
     z-index:999;
 
-    background:rgba(8,14,24,.92);
-
+    background:rgba(7,19,32,.92);
     backdrop-filter:blur(14px);
 
-    border-bottom:1px solid rgba(255,255,255,.05);
+    border-bottom:1px solid rgba(255,255,255,.06);
 
 }
 
 .nav{
 
-    display:flex;
+    height:105px;
 
-    justify-content:space-between;
+    display:flex;
 
     align-items:center;
 
-    min-height:95px;
+    justify-content:flex-start;
+
+    gap:70px;
 
 }
+
+/* Bigger Logo */
 
 .logo img{
 
-    width:190px;
+    width:250px;
 
 }
+
+/* Navigation */
 
 nav{
 
     display:flex;
 
-    gap:45px;
+    gap:35px;
 
 }
 
 nav a{
 
-    color:white;
-
     text-decoration:none;
 
+    color:white;
+
     font-weight:700;
+
+    font-size:.95rem;
 
     letter-spacing:.5px;
 
@@ -135,9 +132,9 @@ nav a::after{
 
     position:absolute;
 
-    bottom:-8px;
-
     left:0;
+
+    bottom:-8px;
 
     width:0;
 
@@ -145,7 +142,7 @@ nav a::after{
 
     background:var(--gold);
 
-    transition:.35s;
+    transition:.3s;
 
 }
 
@@ -155,11 +152,13 @@ nav a:hover::after{
 
 }
 
-/* ===================================
-   HERO
-=================================== */
+/* ======================================================
+HERO
+====================================================== */
 
 .hero{
+
+    position:relative;
 
     min-height:100vh;
 
@@ -170,15 +169,11 @@ nav a:hover::after{
     background:
 
     linear-gradient(
-
         90deg,
-
-        rgba(7,12,22,.96),
-
-        rgba(7,12,22,.75),
-
-        rgba(7,12,22,.25)
-
+        rgba(7,19,32,.96) 0%,
+        rgba(7,19,32,.88) 35%,
+        rgba(7,19,32,.45) 65%,
+        rgba(7,19,32,.15) 100%
     ),
 
     url("herobanner.png");
@@ -187,79 +182,101 @@ nav a:hover::after{
 
     background-position:center right;
 
-    padding-top:120px;
+    overflow:hidden;
 
 }
 
-.hero-content{
+.hero-container{
 
-    max-width:620px;
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    min-height:100vh;
 
 }
+
+.hero-left{
+
+    width:620px;
+
+    margin-top:60px;
+
+}
+
+/* Badge */
 
 .hero-badge{
 
     display:inline-block;
 
-    padding:10px 22px;
-
-    border-radius:100px;
-
-    background:rgba(200,164,93,.15);
+    background:rgba(201,164,90,.15);
 
     color:var(--gold);
 
-    border:1px solid rgba(200,164,93,.4);
+    border:1px solid rgba(201,164,90,.35);
+
+    padding:12px 22px;
+
+    border-radius:40px;
+
+    margin-bottom:30px;
 
     font-size:.85rem;
 
-    letter-spacing:1.5px;
+    letter-spacing:1px;
 
     text-transform:uppercase;
 
-    margin-bottom:25px;
-
 }
+
+/* Heading */
 
 .hero h1{
 
-    font-size:4.6rem;
+    font-size:4.7rem;
 
     line-height:1.08;
 
-    font-weight:800;
+    margin-bottom:30px;
 
-    margin-bottom:25px;
+    font-weight:800;
 
 }
 
-.hero h1 .gold{
+.hero h1 span{
+
+    display:block;
 
     color:var(--gold);
 
 }
 
+/* Paragraph */
+
 .hero p{
 
-    color:#E8E8E8;
+    font-size:1.18rem;
 
-    font-size:1.15rem;
-
-    max-width:580px;
+    color:var(--gray);
 
     margin-bottom:40px;
 
+    max-width:560px;
+
 }
 
-/* ===================================
-   BUTTONS
-=================================== */
+/* ======================================================
+BUTTONS
+====================================================== */
 
 .hero-buttons{
 
     display:flex;
 
-    gap:18px;
+    gap:20px;
 
     flex-wrap:wrap;
 
@@ -271,17 +288,17 @@ nav a:hover::after{
 
     background:var(--gold);
 
-    color:#09121F;
-
-    padding:16px 34px;
-
-    border-radius:10px;
+    color:#071320;
 
     text-decoration:none;
 
+    padding:18px 34px;
+
+    border-radius:10px;
+
     font-weight:700;
 
-    transition:.35s;
+    transition:.3s;
 
 }
 
@@ -289,7 +306,7 @@ nav a:hover::after{
 
     transform:translateY(-4px);
 
-    box-shadow:0 15px 35px rgba(200,164,93,.30);
+    box-shadow:0 20px 40px rgba(201,164,90,.35);
 
 }
 
@@ -301,15 +318,15 @@ nav a:hover::after{
 
     color:white;
 
-    padding:16px 34px;
+    text-decoration:none;
+
+    padding:18px 34px;
 
     border-radius:10px;
 
-    text-decoration:none;
-
     font-weight:700;
 
-    transition:.35s;
+    transition:.3s;
 
 }
 
@@ -317,104 +334,96 @@ nav a:hover::after{
 
     background:var(--gold);
 
-    color:#09121F;
-
-}
-/* ===================================
-   SECTION DEFAULTS
-=================================== */
-
-.section{
-
-    padding:100px 0;
+    color:#071320;
 
 }
 
-.dark{
+/* ======================================================
+SECTION TITLES
+====================================================== */
 
-    background:var(--navy-light);
-
-}
-
-.section h2{
+.section-title{
 
     text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-title h2{
 
     font-size:2.8rem;
 
-    margin-bottom:20px;
+    margin-bottom:15px;
 
-    font-weight:800;
+    color:white;
 
 }
 
-.center{
+.section-title p{
 
-    max-width:760px;
+    max-width:650px;
 
-    margin:0 auto 60px;
-
-    text-align:center;
+    margin:auto;
 
     color:var(--gray);
 
-    font-size:1.05rem;
+    font-size:1.1rem;
+
+}
+/* ======================================================
+VALUES SECTION
+====================================================== */
+
+.values{
+
+    padding:110px 0;
+
+    background:var(--navy2);
 
 }
 
-/* ===================================
-   FAITH • PROTECTION • EDUCATION • LEGACY
-=================================== */
-
-.stats-bar{
-
-    background:#101B2D;
-
-    padding:90px 0;
-
-}
-
-.stats-grid{
+.values-grid{
 
     display:grid;
 
     grid-template-columns:repeat(4,1fr);
 
-    gap:35px;
+    gap:30px;
 
 }
 
-.stat-item{
+.value-card{
 
-    background:#162338;
+    background:#16283F;
 
-    border-radius:18px;
+    border-radius:20px;
 
-    padding:40px 30px;
+    padding:45px 30px;
 
     text-align:center;
 
-    transition:.35s;
-
     border:1px solid rgba(255,255,255,.05);
+
+    transition:.35s;
 
 }
 
-.stat-item:hover{
+.value-card:hover{
 
     transform:translateY(-10px);
 
-    border-color:rgba(200,164,93,.45);
+    border-color:rgba(201,164,90,.40);
 
     box-shadow:0 20px 45px rgba(0,0,0,.30);
 
 }
 
-.stat-icon{
+.value-icon{
 
-    width:70px;
+    width:110px;
 
-    height:70px;
+    height:110px;
 
     object-fit:contain;
 
@@ -422,29 +431,37 @@ nav a:hover::after{
 
 }
 
-.stat-item h3{
+.value-card h3{
 
-    font-size:1.45rem;
+    font-size:1.5rem;
 
     color:var(--gold);
 
-    margin-bottom:15px;
+    margin-bottom:18px;
 
 }
 
-.stat-item p{
+.value-card p{
 
     color:var(--gray);
 
+    font-size:1rem;
+
 }
 
-/* ===================================
-   INSURANCE SECTION
-=================================== */
+/* ======================================================
+INSURANCE
+====================================================== */
 
-.pillars{
+/* ======================================================
+INSURANCE
+====================================================== */
 
-    padding:110px 0;
+.insurance{
+
+    padding:120px 0;
+
+    background:var(--navy);
 
 }
 
@@ -456,124 +473,71 @@ nav a:hover::after{
 
     gap:35px;
 
-    margin-top:55px;
-
 }
 
-.insurance-card{
+.insurance-box{
 
-    position:relative;
-
-    overflow:hidden;
+    background:#16283F;
 
     border-radius:22px;
 
-    height:520px;
+    padding:50px 35px;
 
-    background:#111;
+    text-align:center;
 
-    transition:.4s;
+    border:1px solid rgba(255,255,255,.06);
 
-    box-shadow:0 18px 45px rgba(0,0,0,.35);
+    transition:.35s;
 
 }
 
-.insurance-card:hover{
+.insurance-box:hover{
 
     transform:translateY(-10px);
 
-}
+    border-color:rgba(201,164,90,.45);
 
-.insurance-card img:first-child{
-
-    position:absolute;
-
-    inset:0;
-
-    width:100%;
-
-    height:100%;
-
-    object-fit:cover;
-
-    transition:transform .6s ease;
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
 
 }
 
-.insurance-card:hover img:first-child{
+.insurance-service-icon{
 
-    transform:scale(1.08);
+    width:95px;
 
-}
-
-.insurance-overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:flex-end;
-
-    padding:35px;
-
-    background:linear-gradient(
-        to top,
-        rgba(5,10,18,.95),
-        rgba(5,10,18,.65),
-        rgba(5,10,18,.15)
-    );
-
-}
-
-.insurance-icon{
-
-    width:70px;
-
-    height:70px;
+    height:95px;
 
     object-fit:contain;
+
+    margin:0 auto 25px;
+
+}
+
+.insurance-box h3{
+
+    font-size:1.8rem;
+
+    color:var(--gold);
 
     margin-bottom:20px;
 
 }
 
-.insurance-overlay h3{
+.insurance-box p{
 
-    font-size:2rem;
+    color:var(--gray);
 
-    margin-bottom:15px;
+    line-height:1.8;
 
-    color:white;
-
-}
-
-.insurance-overlay p{
-
-    color:#E6E6E6;
-
-    margin-bottom:28px;
-
-    line-height:1.7;
+    margin-bottom:30px;
 
 }
 
-.insurance-btn{
+.learn-btn{
 
-    display:inline-flex;
+    display:inline-block;
 
-    align-items:center;
-
-    justify-content:center;
-
-    width:max-content;
-
-    padding:14px 28px;
-
-    border-radius:10px;
+    padding:14px 30px;
 
     background:var(--gold);
 
@@ -581,208 +545,324 @@ nav a:hover::after{
 
     text-decoration:none;
 
+    border-radius:10px;
+
     font-weight:700;
 
     transition:.3s;
 
 }
 
-.insurance-btn:hover{
+.learn-btn:hover{
 
     background:var(--gold-light);
 
     transform:translateY(-3px);
 
 }
-/* ===================================
-   REUSABLE GRID & CARDS
-=================================== */
+/* ======================================================
+ABOUT
+====================================================== */
 
-.grid{
+.about{
+
+    padding:120px 0;
+
+    background:var(--navy2);
+
+}
+
+.about-grid{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:450px 1fr;
 
-    gap:35px;
+    gap:80px;
 
-}
-
-.card{
-
-    background:#162338;
-
-    border-radius:18px;
-
-    padding:35px;
-
-    border:1px solid rgba(255,255,255,.05);
-
-    transition:.35s;
+    align-items:center;
 
 }
 
-.card:hover{
+.about-image{
 
-    transform:translateY(-8px);
+    border-radius:22px;
 
-    border-color:rgba(200,164,93,.45);
+    overflow:hidden;
 
-    box-shadow:0 18px 40px rgba(0,0,0,.30);
+    box-shadow:0 25px 50px rgba(0,0,0,.35);
 
 }
 
-.card h3{
+.about-image img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.about-label{
+
+    display:inline-block;
 
     color:var(--gold);
 
-    margin-bottom:18px;
+    font-weight:700;
 
-    font-size:1.45rem;
+    letter-spacing:2px;
 
-}
-
-.card p{
-
-    color:var(--gray);
-
-    line-height:1.8;
-
-}
-
-/* ===================================
-   NEWSLETTER
-=================================== */
-
-.newsletter{
-
-    padding:110px 0;
-
-    background:linear-gradient(135deg,#0E1828,#162338);
-
-    text-align:center;
-
-}
-
-.newsletter h2{
-
-    font-size:2.8rem;
+    text-transform:uppercase;
 
     margin-bottom:20px;
 
 }
 
-.newsletter p{
+.about-content h2{
 
-    max-width:700px;
+    font-size:3rem;
 
-    margin:0 auto 40px;
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.about-content p{
 
     color:var(--gray);
 
+    margin-bottom:22px;
+
+    font-size:1.08rem;
 }
+/* ======================================================
+CONTACT
+====================================================== */
 
-.newsletter form{
+.contact{
 
-    display:flex;
+    padding:120px 0;
 
-    justify-content:center;
-
-    gap:15px;
-
-    flex-wrap:wrap;
-
-}
-
-.newsletter input{
-
-    width:420px;
-
-    max-width:100%;
-
-    padding:18px 22px;
-
-    border:none;
-
-    border-radius:10px;
-
-    font-size:1rem;
-
-    outline:none;
+    background:var(--navy);
 
 }
 
-.newsletter button{
+.contact-grid{
 
-    background:var(--gold);
+    display:grid;
 
-    color:var(--navy);
+    grid-template-columns:420px 1fr;
 
-    border:none;
+    gap:60px;
 
-    padding:18px 34px;
-
-    border-radius:10px;
-
-    cursor:pointer;
-
-    font-weight:700;
-
-    transition:.3s;
+    align-items:start;
 
 }
 
-.newsletter button:hover{
+.contact-info{
 
-    background:var(--gold-light);
+    background:#16283F;
 
-    transform:translateY(-3px);
+    padding:40px;
 
-}
+    border-radius:20px;
 
-/* ===================================
-   FOOTER
-=================================== */
-
-footer{
-
-    background:#050A12;
-
-    padding:70px 0;
-
-    text-align:center;
-
-    border-top:1px solid rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.06);
 
 }
 
-footer h3{
+.contact-info h3{
 
     color:var(--gold);
 
-    margin-bottom:15px;
+    margin-bottom:30px;
 
     font-size:1.8rem;
 
 }
 
-footer p{
+.contact-item{
 
-    color:#BFC7D1;
+    margin-bottom:30px;
+
+}
+
+.contact-item h4{
+
+    color:white;
+
+    margin-bottom:8px;
+
+}
+
+.contact-item p{
+
+    color:var(--gray);
+
+}
+
+.contact-form{
+
+    background:#16283F;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.06);
+
+}
+
+.contact-form form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#0D1B2D;
+
+    color:white;
+
+    font-family:inherit;
+
+    font-size:1rem;
+
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+
+    outline:2px solid var(--gold);
+
+}
+
+.contact-form textarea{
+
+    resize:vertical;
+
+}
+
+/* ======================================================
+FOOTER
+====================================================== */
+
+footer{
+
+    background:#040A13;
+
+    padding:70px 0 30px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:50px;
+
+    margin-bottom:50px;
+
+}
+
+.footer-logo{
+
+    width:220px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-grid h3{
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+
+}
+
+.footer-grid p{
+
+    color:var(--gray);
 
     line-height:1.8;
 
 }
 
-footer img{
+.footer-grid ul{
 
-    margin:0 auto 25px;
+    list-style:none;
 
 }
 
-/* ===================================
-   SCROLLBAR
-=================================== */
+.footer-grid li{
+
+    margin-bottom:12px;
+
+    color:var(--gray);
+
+}
+
+.footer-grid a{
+
+    color:var(--gray);
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-grid a:hover{
+
+    color:var(--gold);
+
+}
+
+.footer-bottom{
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding-top:30px;
+
+}
+
+.footer-bottom p{
+
+    color:#AEB8C4;
+
+    margin-bottom:10px;
+
+    font-size:.95rem;
+
+}
+
+/* ======================================================
+SCROLLBAR
+====================================================== */
 
 ::-webkit-scrollbar{
 
@@ -792,7 +872,7 @@ footer img{
 
 ::-webkit-scrollbar-track{
 
-    background:#08111D;
+    background:#071320;
 
 }
 
@@ -800,7 +880,7 @@ footer img{
 
     background:var(--gold);
 
-    border-radius:20px;
+    border-radius:30px;
 
 }
 
@@ -810,133 +890,201 @@ footer img{
 
 }
 
-/* ===================================
-   RESPONSIVE
-=================================== */
+/* ======================================================
+RESPONSIVE
+====================================================== */
 
 @media(max-width:1100px){
 
-    .hero h1{
+.hero h1{
 
-        font-size:3.6rem;
+font-size:3.7rem;
 
-    }
+}
 
-    .stats-grid{
+.values-grid{
 
-        grid-template-columns:repeat(2,1fr);
+grid-template-columns:repeat(2,1fr);
 
-    }
+}
 
-    .insurance-grid{
+.insurance-grid{
 
-        grid-template-columns:1fr;
+grid-template-columns:1fr;
 
-    }
+}
+
+.about-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.about-image{
+
+max-width:450px;
+
+margin:auto;
+
+}
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.footer-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
 
 }
 
 @media(max-width:768px){
 
-    .nav{
+header{
 
-        flex-direction:column;
+position:relative;
 
-        padding:20px 0;
+}
 
-    }
+.nav{
 
-    nav{
+height:auto;
 
-        flex-wrap:wrap;
+padding:30px 0;
 
-        justify-content:center;
+flex-direction:column;
 
-        gap:18px;
+gap:25px;
 
-        margin-top:20px;
+}
 
-    }
+.logo img{
 
-    .hero{
+width:220px;
 
-        text-align:center;
+}
 
-        background-position:center;
+nav{
 
-    }
+flex-wrap:wrap;
 
-    .hero-content{
+justify-content:center;
 
-        margin:auto;
+gap:18px;
 
-    }
+}
 
-    .hero h1{
+.hero{
 
-        font-size:2.9rem;
+text-align:center;
 
-    }
+background-position:center;
 
-    .hero-buttons{
+}
 
-        justify-content:center;
+.hero-left{
 
-    }
+width:100%;
 
-    .stats-grid{
+margin-top:40px;
 
-        grid-template-columns:1fr;
+}
 
-    }
+.hero h1{
 
-    .section{
+font-size:2.9rem;
 
-        padding:80px 0;
+}
 
-    }
+.hero-buttons{
 
-    .section h2{
+justify-content:center;
 
-        font-size:2.2rem;
+}
 
-    }
+.values-grid{
 
-    .newsletter h2{
+grid-template-columns:1fr;
 
-        font-size:2.2rem;
+}
 
-    }
+.section-title h2{
+
+font-size:2.2rem;
+
+}
+
+.about-content h2{
+
+font-size:2.3rem;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.footer-logo{
+
+margin:auto auto 20px;
+
+}
 
 }
 
 @media(max-width:500px){
 
-    .hero h1{
+.hero h1{
 
-        font-size:2.3rem;
+font-size:2.3rem;
 
-    }
+}
 
-    .btn-primary,
-    .btn-secondary{
+.btn-primary,
+.btn-secondary{
 
-        width:100%;
+width:100%;
 
-        text-align:center;
+text-align:center;
 
-    }
+}
 
-    .newsletter input{
+.value-icon{
 
-        width:100%;
+width:90px;
 
-    }
+height:90px;
 
-    .newsletter button{
+}
 
-        width:100%;
+.insurance-small-icon{
 
-    }
+width:60px;
+
+height:60px;
+
+}
+
+.contact-form{
+
+padding:25px;
+
+}
+
+.contact-info{
+
+padding:25px;
+
+}
 
 }
