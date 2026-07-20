@@ -1,5 +1,5 @@
 /* ==========================================
-GOOGLE FONT RESET
+GLOBAL RESET
 ========================================== */
 
 *{
@@ -20,7 +20,7 @@ body{
 
     font-family:'Manrope',sans-serif;
 
-    background:#081726;
+    background:#081C3A;
 
     color:#ffffff;
 
@@ -33,6 +33,7 @@ body{
 img{
 
     display:block;
+
     max-width:100%;
 
 }
@@ -56,7 +57,8 @@ CONTAINER
 .container{
 
     width:90%;
-    max-width:1250px;
+
+    max-width:1280px;
 
     margin:auto;
 
@@ -71,19 +73,24 @@ HEADER
     position:fixed;
 
     top:0;
+
     left:0;
 
     width:100%;
 
     z-index:1000;
 
-    background:rgba(8,23,38,.70);
+    background:rgba(8,28,58,.85);
 
-    backdrop-filter:blur(16px);
+    backdrop-filter:blur(18px);
 
-    border-bottom:1px solid rgba(255,255,255,.08);
+    border-bottom:1px solid rgba(212,175,55,.20);
 
 }
+
+/* ==========================================
+NAVIGATION
+========================================== */
 
 .nav{
 
@@ -93,7 +100,7 @@ HEADER
 
     align-items:center;
 
-    height:95px;
+    height:100px;
 
 }
 
@@ -103,31 +110,33 @@ LOGO
 
 .logo img{
 
-    width:220px;
+    width:240px;
 
-    transition:.3s;
+    transition:.35s;
 
 }
 
 .logo img:hover{
 
-    transform:scale(1.03);
+    transform:scale(1.04);
 
 }
 
 /* ==========================================
-NAVIGATION
+MENU
 ========================================== */
 
 nav{
 
     display:flex;
 
-    gap:50px;
+    gap:55px;
 
 }
 
 nav a{
+
+    position:relative;
 
     color:#ffffff;
 
@@ -135,15 +144,15 @@ nav a{
 
     font-weight:700;
 
-    transition:.3s;
+    letter-spacing:.4px;
 
-    position:relative;
+    transition:.3s;
 
 }
 
 nav a:hover{
 
-    color:#2ec5ff;
+    color:#D4AF37;
 
 }
 
@@ -154,15 +163,18 @@ nav a::after{
     position:absolute;
 
     left:0;
-    bottom:-8px;
+
+    bottom:-10px;
 
     width:0;
 
-    height:2px;
+    height:3px;
 
-    background:#2ec5ff;
+    background:#D4AF37;
 
-    transition:.3s;
+    border-radius:50px;
+
+    transition:.35s;
 
 }
 
@@ -204,11 +216,11 @@ HERO OVERLAY
 
         90deg,
 
-        rgba(3,12,25,.90) 0%,
+        rgba(8,28,58,.94) 0%,
 
-        rgba(6,18,35,.78) 45%,
+        rgba(11,61,145,.78) 55%,
 
-        rgba(6,18,35,.45) 100%
+        rgba(8,28,58,.45) 100%
 
     );
 
@@ -222,13 +234,13 @@ HERO CONTENT
 
     position:relative;
 
-    z-index:5;
+    z-index:10;
 
 }
 
 .hero-text{
 
-    max-width:650px;
+    max-width:700px;
 
 }
 
@@ -236,23 +248,23 @@ HERO CONTENT
 
     display:inline-block;
 
+    padding:12px 24px;
+
     margin-bottom:28px;
 
-    padding:12px 22px;
+    background:rgba(212,175,55,.15);
 
-    border-radius:40px;
+    border:1px solid rgba(212,175,55,.45);
 
-    background:rgba(255,255,255,.10);
+    border-radius:50px;
 
-    border:1px solid rgba(255,255,255,.15);
-
-    color:#ffffff;
+    color:#D4AF37;
 
     font-size:13px;
 
     font-weight:800;
 
-    letter-spacing:1.5px;
+    letter-spacing:2px;
 
     text-transform:uppercase;
 
@@ -260,7 +272,7 @@ HERO CONTENT
 
 .hero h1{
 
-    font-size:74px;
+    font-size:76px;
 
     font-weight:800;
 
@@ -272,19 +284,19 @@ HERO CONTENT
 
 .hero h1 span{
 
-    color:#2ec5ff;
+    color:#D4AF37;
 
 }
 
 .hero p{
 
-    max-width:620px;
-
     font-size:21px;
 
-    color:#d5dde8;
+    color:#E6EDF8;
 
-    margin-bottom:40px;
+    max-width:620px;
+
+    margin-bottom:45px;
 
 }
 
@@ -304,98 +316,102 @@ BUTTONS
 
 .btn-primary{
 
-    background:#10b6d8;
+    display:inline-block;
 
-    color:#ffffff;
+    background:#D4AF37;
 
-    padding:17px 34px;
+    color:#081C3A;
+
+    font-weight:800;
+
+    padding:17px 36px;
 
     border-radius:10px;
 
-    font-weight:700;
-
-    transition:.3s;
+    transition:.35s;
 
 }
 
 .btn-primary:hover{
 
-    background:#0d9ab7;
+    background:#ffffff;
 
-    transform:translateY(-3px);
+    transform:translateY(-4px);
 
 }
 
 .btn-secondary{
 
-    border:2px solid #ffffff;
+    display:inline-block;
 
-    color:#ffffff;
+    border:2px solid #D4AF37;
 
-    padding:17px 34px;
-
-    border-radius:10px;
+    color:#D4AF37;
 
     font-weight:700;
 
-    transition:.3s;
+    padding:17px 36px;
+
+    border-radius:10px;
+
+    transition:.35s;
 
 }
 
 .btn-secondary:hover{
 
-    background:#ffffff;
+    background:#D4AF37;
 
-    color:#081726;
+    color:#081C3A;
 
 }
 /* ==========================================
-SECTION HEADERS
+SECTION TITLES
 ========================================== */
 
-.section-header{
+.section-title{
 
     text-align:center;
 
-    max-width:760px;
+    max-width:850px;
 
-    margin:0 auto 70px;
+    margin:0 auto 80px;
 
 }
 
-.section-header span{
+.section-title span{
 
-    color:#2ec5ff;
+    color:#D4AF37;
 
-    font-size:14px;
+    font-size:15px;
 
     font-weight:800;
 
-    letter-spacing:2px;
+    letter-spacing:3px;
 
     text-transform:uppercase;
 
 }
 
-.section-header h2{
+.section-title h2{
 
-    font-size:48px;
+    color:#FFFFFF;
 
-    color:#ffffff;
-
-    margin:18px 0 20px;
+    font-size:52px;
 
     font-weight:800;
 
+    margin:20px 0;
+
 }
 
-.section-header p{
+.section-title p{
 
-    color:#b8c6d6;
+    color:#D7E3F5;
 
-    font-size:19px;
+    font-size:20px;
 
-    line-height:1.8;
+    line-height:1.9;
 
 }
 
@@ -405,9 +421,9 @@ WHY CHOOSE OSHURN
 
 .why-oshurn{
 
-    background:#081726;
+    background:#0B3D91;
 
-    padding:120px 0;
+    padding:130px 0;
 
 }
 
@@ -417,19 +433,19 @@ WHY CHOOSE OSHURN
 
     grid-template-columns:repeat(3,1fr);
 
-    gap:35px;
+    gap:40px;
 
 }
 
 .value-card{
 
-    background:#10263b;
+    background:#081C3A;
 
-    border:1px solid rgba(255,255,255,.08);
+    border:2px solid rgba(212,175,55,.25);
 
-    border-radius:18px;
+    border-radius:20px;
 
-    padding:45px 35px;
+    padding:50px 35px;
 
     text-align:center;
 
@@ -439,31 +455,39 @@ WHY CHOOSE OSHURN
 
 .value-card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-12px);
 
-    border-color:#2ec5ff;
+    border-color:#D4AF37;
 
-    box-shadow:0 20px 45px rgba(46,197,255,.18);
+    box-shadow:0 0 35px rgba(46,197,255,.25);
 
 }
 
 .value-icon{
 
-    width:120px;
+    width:150px;
 
-    height:120px;
+    height:150px;
 
     object-fit:contain;
 
-    margin:0 auto 28px;
+    margin:0 auto 30px;
+
+    transition:.35s;
+
+}
+
+.value-card:hover .value-icon{
+
+    transform:scale(1.08);
 
 }
 
 .value-card h3{
 
-    color:#ffffff;
+    color:#FFFFFF;
 
-    font-size:28px;
+    font-size:30px;
 
     margin-bottom:18px;
 
@@ -471,7 +495,7 @@ WHY CHOOSE OSHURN
 
 .value-card p{
 
-    color:#c8d4df;
+    color:#D7E3F5;
 
     font-size:17px;
 
@@ -485,21 +509,9 @@ INSURANCE
 
 .insurance{
 
-    background:#ffffff;
+    background:#081C3A;
 
-    padding:120px 0;
-
-}
-
-.insurance .section-header h2{
-
-    color:#081726;
-
-}
-
-.insurance .section-header p{
-
-    color:#5f6f81;
+    padding:130px 0;
 
 }
 
@@ -509,21 +521,21 @@ INSURANCE
 
     grid-template-columns:repeat(3,1fr);
 
-    gap:35px;
+    gap:40px;
 
 }
 
 .insurance-card{
 
-    background:#ffffff;
+    background:#0B3D91;
 
-    border-radius:18px;
+    border:2px solid rgba(212,175,55,.25);
 
-    padding:45px 35px;
+    border-radius:20px;
+
+    padding:50px 35px;
 
     text-align:center;
-
-    border:1px solid #dbe5ee;
 
     transition:.35s;
 
@@ -531,31 +543,39 @@ INSURANCE
 
 .insurance-card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-12px);
 
-    border-color:#2ec5ff;
+    border-color:#D4AF37;
 
-    box-shadow:0 18px 40px rgba(0,0,0,.12);
+    box-shadow:0 0 35px rgba(46,197,255,.25);
 
 }
 
 .insurance-icon{
 
-    width:105px;
+    width:140px;
 
-    height:105px;
+    height:140px;
 
     object-fit:contain;
 
-    margin:0 auto 28px;
+    margin:0 auto 30px;
+
+    transition:.35s;
+
+}
+
+.insurance-card:hover .insurance-icon{
+
+    transform:scale(1.08);
 
 }
 
 .insurance-card h3{
 
-    color:#081726;
+    color:#FFFFFF;
 
-    font-size:28px;
+    font-size:30px;
 
     margin-bottom:18px;
 
@@ -563,39 +583,45 @@ INSURANCE
 
 .insurance-card p{
 
-    color:#5f6f81;
+    color:#D7E3F5;
 
     font-size:17px;
 
     line-height:1.8;
 
-    margin-bottom:30px;
+    margin-bottom:35px;
 
 }
 
-.service-btn{
+/* ==========================================
+SERVICE BUTTON
+========================================== */
+
+.service-button{
 
     display:inline-block;
 
-    background:#10b6d8;
+    background:#D4AF37;
 
-    color:#ffffff;
+    color:#081C3A;
 
-    padding:15px 30px;
+    font-weight:800;
+
+    padding:15px 34px;
 
     border-radius:10px;
 
-    font-weight:700;
-
-    transition:.3s;
+    transition:.35s;
 
 }
 
-.service-btn:hover{
+.service-button:hover{
 
-    background:#0d9ab7;
+    background:#FFFFFF;
 
-    transform:translateY(-2px);
+    color:#081C3A;
+
+    transform:translateY(-3px);
 
 }
 
@@ -605,23 +631,29 @@ ABOUT
 
 .about{
 
-    background:#081726;
+    background:#0B3D91;
 
-    padding:120px 0;
-
-}
-
-.about .section-header{
-
-    max-width:850px;
+    padding:140px 0;
 
 }
 
-.about-action{
+.about .container{
+
+    max-width:900px;
+
+}
+
+.about p{
+
+    margin-top:20px;
+
+    margin-bottom:45px;
+
+}
+
+.about-button{
 
     text-align:center;
-
-    margin-top:45px;
 
 }
 /* ==========================================
@@ -630,21 +662,9 @@ CONTACT
 
 .contact{
 
-    background:#ffffff;
+    background:#081C3A;
 
-    padding:120px 0;
-
-}
-
-.contact .section-header h2{
-
-    color:#081726;
-
-}
-
-.contact .section-header p{
-
-    color:#5f6f81;
+    padding:140px 0;
 
 }
 
@@ -654,21 +674,21 @@ CONTACT
 
     grid-template-columns:repeat(3,1fr);
 
-    gap:35px;
+    gap:40px;
 
-    margin-bottom:60px;
+    margin-bottom:70px;
 
 }
 
 .contact-card{
 
-    background:#f8fbff;
+    background:#0B3D91;
 
-    border:1px solid #dbe5ee;
+    border:2px solid rgba(212,175,55,.25);
 
-    border-radius:18px;
+    border-radius:20px;
 
-    padding:45px 35px;
+    padding:50px 35px;
 
     text-align:center;
 
@@ -680,17 +700,37 @@ CONTACT
 
     transform:translateY(-10px);
 
-    border-color:#2ec5ff;
+    border-color:#D4AF37;
 
-    box-shadow:0 18px 40px rgba(0,0,0,.12);
+    box-shadow:0 0 35px rgba(212,175,55,.25);
+
+}
+
+.contact-icon{
+
+    width:80px;
+
+    height:80px;
+
+    object-fit:contain;
+
+    margin:0 auto 25px;
+
+    transition:.35s;
+
+}
+
+.contact-card:hover .contact-icon{
+
+    transform:scale(1.1);
 
 }
 
 .contact-card h3{
 
-    font-size:26px;
+    color:#FFFFFF;
 
-    color:#081726;
+    font-size:28px;
 
     margin-bottom:15px;
 
@@ -698,15 +738,15 @@ CONTACT
 
 .contact-card p{
 
-    color:#5f6f81;
+    color:#D7E3F5;
+
+    font-size:18px;
 
     line-height:1.8;
 
-    font-size:17px;
-
 }
 
-.contact-action{
+.contact-button{
 
     text-align:center;
 
@@ -718,9 +758,11 @@ FOOTER
 
 footer{
 
-    background:#06111d;
+    background:#051325;
 
     padding:90px 0 30px;
+
+    border-top:2px solid rgba(212,175,55,.20);
 
 }
 
@@ -730,7 +772,7 @@ footer{
 
     grid-template-columns:2fr 1fr 1fr 1fr;
 
-    gap:50px;
+    gap:60px;
 
     margin-bottom:60px;
 
@@ -738,7 +780,7 @@ footer{
 
 .footer-logo{
 
-    width:220px;
+    width:240px;
 
     margin-bottom:25px;
 
@@ -746,33 +788,39 @@ footer{
 
 .footer-column h3{
 
-    color:#ffffff;
+    color:#D4AF37;
 
     font-size:22px;
 
-    margin-bottom:22px;
+    margin-bottom:20px;
 
 }
 
 .footer-column p{
 
-    color:#a7b6c6;
+    color:#D7E3F5;
 
-    line-height:1.9;
+    margin-bottom:14px;
 
-    margin-bottom:12px;
+    line-height:1.8;
 
 }
 
-.footer-column ul li{
+.footer-column ul{
 
-    margin-bottom:15px;
+    padding:0;
+
+}
+
+.footer-column li{
+
+    margin-bottom:14px;
 
 }
 
 .footer-column a{
 
-    color:#a7b6c6;
+    color:#FFFFFF;
 
     transition:.3s;
 
@@ -780,15 +828,15 @@ footer{
 
 .footer-column a:hover{
 
-    color:#2ec5ff;
+    color:#D4AF37;
 
-    padding-left:6px;
+    padding-left:8px;
 
 }
 
 .footer-bottom{
 
-    border-top:1px solid rgba(255,255,255,.08);
+    border-top:1px solid rgba(255,255,255,.10);
 
     padding-top:30px;
 
@@ -798,7 +846,7 @@ footer{
 
 .footer-bottom p{
 
-    color:#7d8ea1;
+    color:#AFC5E0;
 
     font-size:15px;
 
@@ -810,18 +858,8 @@ RESPONSIVE
 
 @media(max-width:1100px){
 
-.values-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.insurance-grid{
-
-    grid-template-columns:1fr;
-
-}
-
+.values-grid,
+.insurance-grid,
 .contact-grid{
 
     grid-template-columns:1fr;
@@ -836,7 +874,13 @@ RESPONSIVE
 
 .hero h1{
 
-    font-size:58px;
+    font-size:60px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
 
 }
 
@@ -886,7 +930,7 @@ nav{
 
 .hero h1{
 
-    font-size:44px;
+    font-size:46px;
 
 }
 
@@ -896,7 +940,7 @@ nav{
 
 }
 
-.section-header h2{
+.section-title h2{
 
     font-size:36px;
 
@@ -930,13 +974,13 @@ nav{
 
     font-size:11px;
 
-    padding:10px 18px;
+    letter-spacing:1px;
 
 }
 
 .btn-primary,
 .btn-secondary,
-.service-btn{
+.service-button{
 
     display:block;
 
@@ -954,17 +998,25 @@ nav{
 
 .value-icon{
 
-    width:100px;
+    width:120px;
 
-    height:100px;
+    height:120px;
 
 }
 
 .insurance-icon{
 
-    width:90px;
+    width:120px;
 
-    height:90px;
+    height:120px;
+
+}
+
+.contact-icon{
+
+    width:70px;
+
+    height:70px;
 
 }
 
