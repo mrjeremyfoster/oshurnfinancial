@@ -1,37 +1,52 @@
 /* ==========================================
-GOOGLE FONT
+GOOGLE FONT RESET
 ========================================== */
 
 *{
+
     margin:0;
     padding:0;
     box-sizing:border-box;
+
 }
 
 html{
+
     scroll-behavior:smooth;
+
 }
 
 body{
 
     font-family:'Manrope',sans-serif;
-    color:#1f2937;
-    background:#ffffff;
+
+    background:#081726;
+
+    color:#ffffff;
+
     line-height:1.7;
+
+    overflow-x:hidden;
 
 }
 
 img{
-    max-width:100%;
+
     display:block;
+    max-width:100%;
+
 }
 
 a{
+
     text-decoration:none;
+
 }
 
 ul{
+
     list-style:none;
+
 }
 
 /* ==========================================
@@ -41,7 +56,8 @@ CONTAINER
 .container{
 
     width:90%;
-    max-width:1200px;
+    max-width:1250px;
+
     margin:auto;
 
 }
@@ -50,33 +66,52 @@ CONTAINER
 HEADER
 ========================================== */
 
-header{
+.header{
 
     position:fixed;
+
     top:0;
     left:0;
+
     width:100%;
 
-    background:#ffffff;
-    box-shadow:0 2px 18px rgba(0,0,0,.06);
+    z-index:1000;
 
-    z-index:999;
+    background:rgba(8,23,38,.70);
+
+    backdrop-filter:blur(16px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
 
 }
 
 .nav{
 
-    height:90px;
-
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
+
+    height:95px;
 
 }
 
+/* ==========================================
+LOGO
+========================================== */
+
 .logo img{
 
-    width:190px;
+    width:220px;
+
+    transition:.3s;
+
+}
+
+.logo img:hover{
+
+    transform:scale(1.03);
 
 }
 
@@ -87,24 +122,53 @@ NAVIGATION
 nav{
 
     display:flex;
-    align-items:center;
-    gap:48px;
+
+    gap:50px;
 
 }
 
 nav a{
 
-    color:#1f2937;
-    font-size:16px;
-    font-weight:600;
+    color:#ffffff;
+
+    font-size:17px;
+
+    font-weight:700;
 
     transition:.3s;
+
+    position:relative;
 
 }
 
 nav a:hover{
 
-    color:#0f766e;
+    color:#2ec5ff;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#2ec5ff;
+
+    transition:.3s;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
 
 }
 
@@ -119,25 +183,46 @@ HERO
     min-height:100vh;
 
     display:flex;
+
     align-items:center;
 
     background:url("herobanner.png") center center/cover no-repeat;
 
 }
 
+/* ==========================================
+HERO OVERLAY
+========================================== */
+
 .hero-overlay{
 
     position:absolute;
+
     inset:0;
 
-    background:rgba(0,0,0,.55);
+    background:linear-gradient(
+
+        90deg,
+
+        rgba(3,12,25,.90) 0%,
+
+        rgba(6,18,35,.78) 45%,
+
+        rgba(6,18,35,.45) 100%
+
+    );
 
 }
+
+/* ==========================================
+HERO CONTENT
+========================================== */
 
 .hero-content{
 
     position:relative;
-    z-index:2;
+
+    z-index:5;
 
 }
 
@@ -145,53 +230,59 @@ HERO
 
     max-width:650px;
 
-    color:#ffffff;
-
 }
 
 .hero-badge{
 
     display:inline-block;
 
-    margin-bottom:25px;
+    margin-bottom:28px;
 
-    padding:10px 20px;
+    padding:12px 22px;
 
-    border-radius:50px;
+    border-radius:40px;
 
-    background:rgba(255,255,255,.12);
+    background:rgba(255,255,255,.10);
 
-    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.15);
 
-    font-size:14px;
-    font-weight:700;
-    letter-spacing:1px;
+    color:#ffffff;
+
+    font-size:13px;
+
+    font-weight:800;
+
+    letter-spacing:1.5px;
+
     text-transform:uppercase;
 
 }
 
 .hero h1{
 
-    font-size:64px;
-    font-weight:800;
-    line-height:1.1;
+    font-size:74px;
 
-    margin-bottom:24px;
+    font-weight:800;
+
+    line-height:1.05;
+
+    margin-bottom:25px;
 
 }
 
 .hero h1 span{
 
-    display:block;
-
-    color:#38bdf8;
+    color:#2ec5ff;
 
 }
 
 .hero p{
 
-    font-size:20px;
-    color:#e5e7eb;
+    max-width:620px;
+
+    font-size:21px;
+
+    color:#d5dde8;
 
     margin-bottom:40px;
 
@@ -204,21 +295,22 @@ BUTTONS
 .hero-buttons{
 
     display:flex;
+
     gap:20px;
+
     flex-wrap:wrap;
 
 }
 
 .btn-primary{
 
-    display:inline-block;
+    background:#10b6d8;
 
-    background:#0f766e;
     color:#ffffff;
 
-    padding:16px 34px;
+    padding:17px 34px;
 
-    border-radius:8px;
+    border-radius:10px;
 
     font-weight:700;
 
@@ -228,22 +320,21 @@ BUTTONS
 
 .btn-primary:hover{
 
-    background:#115e59;
-    transform:translateY(-2px);
+    background:#0d9ab7;
+
+    transform:translateY(-3px);
 
 }
 
 .btn-secondary{
 
-    display:inline-block;
-
     border:2px solid #ffffff;
 
     color:#ffffff;
 
-    padding:16px 34px;
+    padding:17px 34px;
 
-    border-radius:8px;
+    border-radius:10px;
 
     font-weight:700;
 
@@ -254,43 +345,43 @@ BUTTONS
 .btn-secondary:hover{
 
     background:#ffffff;
-    color:#1f2937;
+
+    color:#081726;
 
 }
 /* ==========================================
-SECTION TITLES
+SECTION HEADERS
 ========================================== */
 
-section{
-
-    padding:110px 0;
-
-}
-
-.section-title{
+.section-header{
 
     text-align:center;
+
     max-width:760px;
+
     margin:0 auto 70px;
 
 }
 
-.section-title span{
+.section-header span{
 
-    color:#0f766e;
+    color:#2ec5ff;
 
     font-size:14px;
+
     font-weight:800;
 
     letter-spacing:2px;
+
     text-transform:uppercase;
 
 }
 
-.section-title h2{
+.section-header h2{
 
-    font-size:44px;
-    color:#111827;
+    font-size:48px;
+
+    color:#ffffff;
 
     margin:18px 0 20px;
 
@@ -298,10 +389,11 @@ section{
 
 }
 
-.section-title p{
+.section-header p{
 
-    color:#6b7280;
-    font-size:18px;
+    color:#b8c6d6;
+
+    font-size:19px;
 
     line-height:1.8;
 
@@ -313,7 +405,9 @@ WHY CHOOSE OSHURN
 
 .why-oshurn{
 
-    background:#f8fafc;
+    background:#081726;
+
+    padding:120px 0;
 
 }
 
@@ -321,7 +415,7 @@ WHY CHOOSE OSHURN
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    grid-template-columns:repeat(3,1fr);
 
     gap:35px;
 
@@ -329,15 +423,15 @@ WHY CHOOSE OSHURN
 
 .value-card{
 
-    background:#ffffff;
+    background:#10263b;
+
+    border:1px solid rgba(255,255,255,.08);
 
     border-radius:18px;
 
-    padding:45px 30px;
+    padding:45px 35px;
 
     text-align:center;
-
-    box-shadow:0 12px 35px rgba(0,0,0,.06);
 
     transition:.35s;
 
@@ -347,26 +441,29 @@ WHY CHOOSE OSHURN
 
     transform:translateY(-10px);
 
-    box-shadow:0 20px 45px rgba(0,0,0,.12);
+    border-color:#2ec5ff;
+
+    box-shadow:0 20px 45px rgba(46,197,255,.18);
 
 }
 
 .value-icon{
 
-    width:130px;
-    height:130px;
+    width:120px;
+
+    height:120px;
 
     object-fit:contain;
 
-    margin:0 auto 30px;
+    margin:0 auto 28px;
 
 }
 
 .value-card h3{
 
-    font-size:26px;
+    color:#ffffff;
 
-    color:#111827;
+    font-size:28px;
 
     margin-bottom:18px;
 
@@ -374,9 +471,11 @@ WHY CHOOSE OSHURN
 
 .value-card p{
 
-    color:#6b7280;
+    color:#c8d4df;
 
     font-size:17px;
+
+    line-height:1.8;
 
 }
 
@@ -388,13 +487,27 @@ INSURANCE
 
     background:#ffffff;
 
+    padding:120px 0;
+
+}
+
+.insurance .section-header h2{
+
+    color:#081726;
+
+}
+
+.insurance .section-header p{
+
+    color:#5f6f81;
+
 }
 
 .insurance-grid{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:repeat(3,1fr);
 
     gap:35px;
 
@@ -410,7 +523,7 @@ INSURANCE
 
     text-align:center;
 
-    border:1px solid #e5e7eb;
+    border:1px solid #dbe5ee;
 
     transition:.35s;
 
@@ -420,28 +533,29 @@ INSURANCE
 
     transform:translateY(-10px);
 
-    border-color:#0f766e;
+    border-color:#2ec5ff;
 
-    box-shadow:0 18px 40px rgba(0,0,0,.10);
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
 
 }
 
 .insurance-icon{
 
-    width:110px;
-    height:110px;
+    width:105px;
+
+    height:105px;
 
     object-fit:contain;
 
-    margin:0 auto 30px;
+    margin:0 auto 28px;
 
 }
 
 .insurance-card h3{
 
-    font-size:28px;
+    color:#081726;
 
-    color:#111827;
+    font-size:28px;
 
     margin-bottom:18px;
 
@@ -449,25 +563,27 @@ INSURANCE
 
 .insurance-card p{
 
-    color:#6b7280;
-
-    margin-bottom:30px;
+    color:#5f6f81;
 
     font-size:17px;
 
+    line-height:1.8;
+
+    margin-bottom:30px;
+
 }
 
-.learn-btn{
+.service-btn{
 
     display:inline-block;
 
-    background:#0f766e;
+    background:#10b6d8;
 
     color:#ffffff;
 
-    padding:14px 30px;
+    padding:15px 30px;
 
-    border-radius:8px;
+    border-radius:10px;
 
     font-weight:700;
 
@@ -475,9 +591,11 @@ INSURANCE
 
 }
 
-.learn-btn:hover{
+.service-btn:hover{
 
-    background:#115e59;
+    background:#0d9ab7;
+
+    transform:translateY(-2px);
 
 }
 
@@ -487,18 +605,21 @@ ABOUT
 
 .about{
 
-    background:#f8fafc;
+    background:#081726;
+
+    padding:120px 0;
 
 }
 
-.about .container{
+.about .section-header{
 
     max-width:850px;
-    text-align:center;
 
 }
 
-.about-buttons{
+.about-action{
+
+    text-align:center;
 
     margin-top:45px;
 
@@ -511,51 +632,65 @@ CONTACT
 
     background:#ffffff;
 
+    padding:120px 0;
+
+}
+
+.contact .section-header h2{
+
+    color:#081726;
+
+}
+
+.contact .section-header p{
+
+    color:#5f6f81;
+
 }
 
 .contact-grid{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(3,1fr);
 
-    gap:30px;
+    gap:35px;
 
-    margin-bottom:50px;
+    margin-bottom:60px;
 
 }
 
 .contact-card{
 
-    background:#f8fafc;
+    background:#f8fbff;
 
-    padding:40px 30px;
+    border:1px solid #dbe5ee;
 
     border-radius:18px;
 
+    padding:45px 35px;
+
     text-align:center;
 
-    border:1px solid #e5e7eb;
-
-    transition:.3s;
+    transition:.35s;
 
 }
 
 .contact-card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-10px);
 
-    box-shadow:0 18px 40px rgba(0,0,0,.08);
+    border-color:#2ec5ff;
 
-    border-color:#0f766e;
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
 
 }
 
 .contact-card h3{
 
-    font-size:24px;
+    font-size:26px;
 
-    color:#111827;
+    color:#081726;
 
     margin-bottom:15px;
 
@@ -563,13 +698,15 @@ CONTACT
 
 .contact-card p{
 
-    color:#6b7280;
+    color:#5f6f81;
+
+    line-height:1.8;
 
     font-size:17px;
 
 }
 
-.contact-button{
+.contact-action{
 
     text-align:center;
 
@@ -581,11 +718,9 @@ FOOTER
 
 footer{
 
-    background:#111827;
+    background:#06111d;
 
-    color:#d1d5db;
-
-    padding:80px 0 30px;
+    padding:90px 0 30px;
 
 }
 
@@ -597,13 +732,13 @@ footer{
 
     gap:50px;
 
-    margin-bottom:50px;
+    margin-bottom:60px;
 
 }
 
 .footer-logo{
 
-    width:180px;
+    width:220px;
 
     margin-bottom:25px;
 
@@ -613,39 +748,39 @@ footer{
 
     color:#ffffff;
 
-    margin-bottom:20px;
-
     font-size:22px;
+
+    margin-bottom:22px;
 
 }
 
 .footer-column p{
 
-    color:#9ca3af;
+    color:#a7b6c6;
+
+    line-height:1.9;
 
     margin-bottom:12px;
-
-    line-height:1.8;
 
 }
 
 .footer-column ul li{
 
-    margin-bottom:14px;
+    margin-bottom:15px;
 
 }
 
-.footer-column ul li a{
+.footer-column a{
 
-    color:#9ca3af;
+    color:#a7b6c6;
 
     transition:.3s;
 
 }
 
-.footer-column ul li a:hover{
+.footer-column a:hover{
 
-    color:#38bdf8;
+    color:#2ec5ff;
 
     padding-left:6px;
 
@@ -653,7 +788,7 @@ footer{
 
 .footer-bottom{
 
-    border-top:1px solid rgba(255,255,255,.12);
+    border-top:1px solid rgba(255,255,255,.08);
 
     padding-top:30px;
 
@@ -663,11 +798,9 @@ footer{
 
 .footer-bottom p{
 
-    color:#9ca3af;
+    color:#7d8ea1;
 
     font-size:15px;
-
-    margin-bottom:12px;
 
 }
 
@@ -675,17 +808,23 @@ footer{
 RESPONSIVE
 ========================================== */
 
-@media (max-width:992px){
+@media(max-width:1100px){
 
-.hero h1{
+.values-grid{
 
-    font-size:52px;
+    grid-template-columns:1fr;
 
 }
 
-.section-title h2{
+.insurance-grid{
 
-    font-size:36px;
+    grid-template-columns:1fr;
+
+}
+
+.contact-grid{
+
+    grid-template-columns:1fr;
 
 }
 
@@ -693,13 +832,17 @@ RESPONSIVE
 
     grid-template-columns:1fr 1fr;
 
-    gap:40px;
+}
+
+.hero h1{
+
+    font-size:58px;
 
 }
 
 }
 
-@media (max-width:768px){
+@media(max-width:768px){
 
 .nav{
 
@@ -707,7 +850,7 @@ RESPONSIVE
 
     height:auto;
 
-    padding:20px 0;
+    padding:25px 0;
 
 }
 
@@ -715,7 +858,7 @@ nav{
 
     margin-top:20px;
 
-    gap:25px;
+    gap:28px;
 
     flex-wrap:wrap;
 
@@ -743,7 +886,7 @@ nav{
 
 .hero h1{
 
-    font-size:42px;
+    font-size:44px;
 
 }
 
@@ -753,9 +896,9 @@ nav{
 
 }
 
-.section-title h2{
+.section-header h2{
 
-    font-size:32px;
+    font-size:36px;
 
 }
 
@@ -775,13 +918,7 @@ nav{
 
 }
 
-@media (max-width:576px){
-
-section{
-
-    padding:80px 0;
-
-}
+@media(max-width:576px){
 
 .hero h1{
 
@@ -791,13 +928,17 @@ section{
 
 .hero-badge{
 
-    font-size:12px;
+    font-size:11px;
+
+    padding:10px 18px;
 
 }
 
 .btn-primary,
 .btn-secondary,
-.learn-btn{
+.service-btn{
+
+    display:block;
 
     width:100%;
 
@@ -805,17 +946,31 @@ section{
 
 }
 
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
 .value-icon{
 
-    width:110px;
-    height:110px;
+    width:100px;
+
+    height:100px;
 
 }
 
 .insurance-icon{
 
     width:90px;
+
     height:90px;
+
+}
+
+section{
+
+    padding:90px 0;
 
 }
 
